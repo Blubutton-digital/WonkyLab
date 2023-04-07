@@ -6,7 +6,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+      },
+      colors: {
+        wonky: "#FFA928",
+      },
+    },
   },
   plugins: [],
 };
