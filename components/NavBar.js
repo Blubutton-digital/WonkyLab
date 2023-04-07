@@ -1,12 +1,15 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 import Logo from "../public/Logo.png";
 import Link from "next/link";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState(false);
+
   return (
-    <div className="bg-gray-100 h-20 w-full z-50">
+    <div className="bg-gray-100 h-20 w-full fixed z-50">
       <div className="container mx-auto flex flex-row relative justify-between">
         <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden">
           <Link
@@ -83,6 +86,86 @@ const NavBar = () => {
                 fill="#18141F"
               />
             </svg>
+          </div>
+        </nav>
+        {/* Mobile Nav */}
+        <nav className="flex lg:hidden max-h-20">
+          <div className="container mx-auto flex flex-row items-center lg:justify-between relative">
+            <div
+              className={
+                open
+                  ? "lg:hidden block space-y-2 cursor-pointer mr-10 translate-x-56 transition-all"
+                  : "lg:hidden block space-y-2 cursor-pointer mr-10"
+              }
+              onClick={() => setOpen(!open)}
+            >
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+              <div className="w-8 h-0.5 bg-gray-600"></div>
+            </div>
+            <nav
+              className={
+                open
+                  ? "flex flex-col fixed inset-0 top-14 bg-gray-100  transition-all items-center justify-evenly -z-10"
+                  : "flex flex-col fixed inset-0 -translate-x-full top-14 bg-white transition-all items-center justify-evenly"
+              }
+            >
+              <Link
+                href="/"
+                className="text-4xl"
+                onClick={() => setOpen(!open)}
+              >
+                Home
+              </Link>
+              <Link
+                href="#About"
+                className="text-4xl"
+                onClick={() => setActive(!active)}
+              >
+                Our Story
+              </Link>
+              <Link
+                href="#Promotion"
+                className="text-4xl"
+                onClick={() => setActive(!active)}
+              >
+                What we offer
+              </Link>
+              <Link
+                href="#Shop"
+                className="text-4xl"
+                onClick={() => setActive(!active)}
+              >
+                Events
+              </Link>
+              <Link
+                href="#Contacts"
+                className="text-4xl"
+                onClick={() => setActive(!active)}
+              >
+                Book with us
+              </Link>
+              <Link
+                href="#Contacts"
+                className="text-4xl"
+                onClick={() => setActive(!active)}
+              >
+                Contact us
+              </Link>
+            </nav>
+            <div className=" flex flex-row items-center">
+              <div
+                className={
+                  open
+                    ? "lg:hidden absolute block right-4 bottom-1/2 translate-y-1/2 space-y-2 cursor-pointer"
+                    : "hidden"
+                }
+                onClick={() => setOpen(!open)}
+              >
+                <div className="w-8 h-0.5 bg-gray-600 rotate-45 origin-bottom translate-y-[9px]"></div>
+                <div className="w-8 h-0.5 bg-gray-600 -rotate-45 bottom-4"></div>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
