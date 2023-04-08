@@ -19,7 +19,7 @@ export default function Home() {
         <NavBar />
         <Hero />
       </header>
-      <main>
+      <main className="bg-gray-100">
         <InfoBar />
       </main>
     </>
