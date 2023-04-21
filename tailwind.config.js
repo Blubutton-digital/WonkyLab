@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         wonky: "#FFA928",
+        bg: "#4D545D",
       },
     },
   },

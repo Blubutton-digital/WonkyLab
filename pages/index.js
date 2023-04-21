@@ -1,8 +1,9 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { Content, Inter } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import InfoBar from "@/components/InfoBar";
+import Info from "@/components/Info";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,9 @@ export default function Home() {
         <NavBar />
         <Hero />
       </header>
-      <main className="bg-gray-100">
+      <main className="bg-bg">
         <InfoBar />
+        <Info />
       </main>
     </>
   );

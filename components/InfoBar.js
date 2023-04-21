@@ -2,8 +2,8 @@ import React from "react";
 
 const InfoBar = () => {
   return (
-    <div className="max-w-3xl md:h-[161px] h-full p-0 bg-white mx-auto -translate-y-1/2 rounded-md flex flex-col sm:flex-row space-between drop-shadow-md sm:space-y-0 space-y-0 relative">
-      <div className="w-full sm:w-1/2 h-full sm:max-h-[133px] sm:max-w-[246px] m-auto flex flex-col justify-between p-5 sm:p-0 sm:space-y-0 space-y-0 gap-4">
+    <div className="max-w-3xl sm:h-[161px] h-full p-0 bg-white mx-auto -translate-y-1/2 rounded-md flex flex-col sm:flex-row space-between drop-shadow-md sm:space-y-0 space-y-0 relative items-center">
+      <div className="w-full sm:w-1/2 h-full sm:max-h-[133px] sm:max-w-[246px] m-auto flex flex-col justify-between p-5 sm:p-0 sm:space-y-0 space-y-0 gap-4 sm:gap-0">
         <h3 className="text-2xl font-playfair font-normal tracking-wide">
           Grand Opening
         </h3>
@@ -17,7 +17,7 @@ const InfoBar = () => {
           View more details
         </button>
       </div>
-      <div className="w-full sm:w-1/2 h-full sm:max-h-[133px] sm:max-w-[246px] m-auto flex flex-col justify-between p-5 sm:p-0 sm:space-y-0 space-y-0 gap-4">
+      <div className="w-full sm:w-1/2 h-full sm:max-h-[133px] sm:max-w-[246px] m-auto flex flex-col justify-between p-5 sm:p-0 sm:space-y-0 space-y-0 gap-4 sm:gap-0">
         <h3 className="text-2xl font-playfair font-normal tracking-wide">
           Booking Our Venue
         </h3>
