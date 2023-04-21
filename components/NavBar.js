@@ -13,19 +13,19 @@ const NavBar = () => {
       <div className="container mx-auto flex flex-row relative justify-between">
         <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden">
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             Our Story
           </Link>
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             What we offer
@@ -42,19 +42,19 @@ const NavBar = () => {
         {/* </div> */}
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             Events
           </Link>
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             Book with us
           </Link>
           <Link
-            className="relative after:w-full after:h-[2px] after:bg-wonky hover:after:absolute after:-bottom-0 after:left-0 xlg:text-lg text-sm font-lato tracking-wide"
+            className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
           >
             Contact us

@@ -1,16 +1,20 @@
 import React from "react";
+import H3 from "./H3";
+import Image from "next/image";
+
+import Shopfront from "../public/Images/shop-front.jpg";
 
 const Info = ({ reverse }) => {
   return (
-    <div className="container mx-auto flex flex-col">
-      <div className="w-1/2">
-        <h3>Discover Our Welcoming Atmosphere</h3>
-        <p className="text-white">
+    <div className="container mx-auto flex flex-col lg:flex-row gap-x-20 justify-between mt-2 p-4 lg:">
+      <div className="lg:w-6/12 w-full h-full relative self-start flex flex-col items-start my-auto">
+        <H3>Discover Our Welcoming Atmosphere</H3>
+        <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
           Looking for a place to relax and enjoy a cold craft beer? Our bar is
           the perfect spot for you! We offer a cosy atmosphere and a unique
           drinking experience that will leave you coming back for more.
         </p>
-        <p className="text-white">
+        <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
           Our small bar is the perfect place to escape from the hustle and
           bustle of city life and enjoy a drink with friends, or just by
           yourself. Our bartenders are knowledgeable about each of the craft
@@ -19,7 +23,15 @@ const Info = ({ reverse }) => {
           a drink, our bar is the perfect choice!
         </p>
       </div>
-      <div className="">image</div>
+      <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
+        <Image
+          alt="Photo of the shop front"
+          src={Shopfront}
+          fill
+          className="rounded-lg"
+          objectFit="cover"
+        />
+      </div>
     </div>
   );
 };
