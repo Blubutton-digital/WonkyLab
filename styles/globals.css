@@ -3,3 +3,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper {
+  width: 95%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --swiper-navigation-color: #ffa928;
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: -50%;
+
+  --swiper-pagination-color: #e49a38;
+  --swiper-pagination-left: 200px;
+  --swiper-pagination-bottom: 0;
+
+  color: #292929;
+}

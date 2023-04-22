@@ -1,0 +1,58 @@
+export const Beers = [
+  {
+    name: "Tiny Gangsta",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangster",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: true,
+    gluten: false,
+  },
+  {
+    name: "Tiny Gangstor",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangstir",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangstaaaaa",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangstam",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangsta",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+  {
+    name: "Tiny Gangsta",
+    percent: "7",
+    brewery: "Abbeydale",
+    vegan: false,
+    gluten: true,
+  },
+];

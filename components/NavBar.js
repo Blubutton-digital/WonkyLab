@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <div className="bg-gray-100 h-20 w-full fixed z-50">
       <div className="container mx-auto flex flex-row relative justify-between">
-        <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden">
+        <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-[#292929]">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"

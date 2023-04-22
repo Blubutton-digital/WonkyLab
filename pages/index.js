@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import InfoBar from "@/components/InfoBar";
 import Info from "@/components/Info";
+import Offer from "@/components/Offer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,8 @@ export default function Home() {
       <main className="bg-bg">
         <InfoBar />
         <Info />
+        <Offer />
+        <div className="h-screen w-screen"></div>
       </main>
     </>
   );
