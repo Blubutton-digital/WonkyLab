@@ -41,7 +41,7 @@ const NavBar = () => {
         <Image
           src={Logo}
           alt="Logo for Wonky Lab"
-          className="-mt-[10px] bg-gray-100 rounded-md px-2 block lg:hidden h-20 w-auto"
+          className=" bg-gray-100 rounded-md px-2 block lg:hidden h-20 w-auto"
         />
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link
