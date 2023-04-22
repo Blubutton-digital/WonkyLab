@@ -29,7 +29,7 @@ const Offer = () => {
   const swiper = useSwiper();
 
   return (
-    <section className="bg-[#EBEBEB] pb-52">
+    <section className="bg-[#EBEBEB] pb-28">
       <div className="container mx-auto pt-28 text-center">
         <H3 black>What we offer</H3>
         <p className="text-[#292929] max-w-3xl mx-auto lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">

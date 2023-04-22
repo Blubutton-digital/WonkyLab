@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import InfoBar from "@/components/InfoBar";
 import Info from "@/components/Info";
 import Offer from "@/components/Offer";
+import LogoList from "@/components/LogoList";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function Home() {
         <InfoBar />
         <Info />
         <Offer />
-        <div className="h-screen w-screen"></div>
+        <LogoList />
       </main>
     </>
   );
