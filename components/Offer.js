@@ -30,7 +30,7 @@ const Offer = () => {
 
   return (
     <section className="bg-[#EBEBEB] pb-28">
-      <div className="container mx-auto pt-28 text-center">
+      <div className="container mx-auto pt-28 text-center mb-24">
         <H3 black>What we offer</H3>
         <p className="text-[#292929] max-w-3xl mx-auto lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
           We offer wide range of drinks. We always cater to those who are Gluten
@@ -39,7 +39,7 @@ const Offer = () => {
         </p>
       </div>
       <div className="relative container mx-auto">
-        <Stamp className="absolute top-0 left-0 -translate-y-3/4 -translate-x-10 xl:opacity-40 opacity-20" />
+        <Stamp className="absolute top-0 left-0 lg:-translate-y-3/4 lg:-translate-x-10 -translate-x-10 -translate-y-[70%] xl:opacity-40 opacity-20 scale-75 lg:scale-100  sm:block" />
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
