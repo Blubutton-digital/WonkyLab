@@ -6,7 +6,7 @@ import Shopfront from "../public/Images/shop-front.jpg";
 
 const Info = ({ reverse }) => {
   return (
-    <div className="container mx-auto flex flex-col lg:flex-row gap-x-20 justify-between mt-2 p-4 lg:">
+    <div className="container mx-auto flex flex-col lg:flex-row gap-x-20 justify-between sm:mt-2 mt-10 p-4 lg:">
       <div className="lg:w-6/12 w-full h-full relative self-start flex flex-col items-start my-auto">
         <H3>Discover Our Welcoming Atmosphere</H3>
         <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
