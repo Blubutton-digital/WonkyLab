@@ -39,7 +39,7 @@ const Offer = () => {
         </p>
       </div>
       <div className="relative container mx-auto">
-        <Stamp className="absolute top-0 left-0 -translate-y-3/4 -translate-x-10 opacity-40 " />
+        <Stamp className="absolute top-0 left-0 -translate-y-3/4 -translate-x-10 xl:opacity-40 opacity-20" />
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
