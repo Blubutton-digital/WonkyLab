@@ -31,15 +31,18 @@ const NavBar = () => {
             What we offer
           </Link>
         </nav>
-        {/* <div className=" bg-red-100 h-[189px] w-[149]"> */}
         <Image
           src={Logo}
           alt="Logo for Wonky Lab"
           height={189}
           width={160}
-          className="-mt-[10px] bg-gray-100 rounded-md px-2"
+          className="-mt-[10px] bg-gray-100 rounded-md px-2 hidden lg:block"
         />
-        {/* </div> */}
+        <Image
+          src={Logo}
+          alt="Logo for Wonky Lab"
+          className="-mt-[10px] bg-gray-100 rounded-md px-2 block lg:hidden h-20 w-auto"
+        />
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
