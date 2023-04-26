@@ -1,9 +1,9 @@
 import React from "react";
 import H3 from "./H3";
-
+// g-[url('../public/Images/Banner-bg.png')]
 const Banner = () => {
   return (
-    <div className="w-screen bg-[url('../public/Images/Banner-bg.png')] bg-cover bg-center bg-no-repeat py-28">
+    <div className="w-screen bg-banner bg-cover bg-center bg-no-repeat py-28">
       <div className="container mx-auto flex flex-row items-center justify-center px-4">
         <div className="max-w-lg items-center text-center">
           <H3>Find us on social media</H3>

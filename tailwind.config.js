@@ -16,8 +16,17 @@ module.exports = {
         bg: "#4D545D",
         dark: "#292929",
       },
+      animation: {
+        scroll: "5s slide infinite linear",
+      },
+      keyframes: {
+        infinite: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {
-        // banner: "url(./public/Images/Banner-bg.png)",
+        banner: 'url("../public/Images/Banner-bg.png")',
       },
     },
   },
