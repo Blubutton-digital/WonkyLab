@@ -14,6 +14,10 @@ module.exports = {
       colors: {
         wonky: "#FFA928",
         bg: "#4D545D",
+        dark: "#292929",
+      },
+      backgroundImage: {
+        // banner: "url(./public/Images/Banner-bg.png)",
       },
     },
   },

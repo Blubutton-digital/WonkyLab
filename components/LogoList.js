@@ -9,8 +9,8 @@ import Neepsend from "../public/Images/Logos/Neepsend.png";
 
 const LogoList = () => {
   return (
-    <div className="w-full bg-[#e3e3e3] h-full mb-24 py-8">
-      <div className="container flex flex-row mx-auto relative md:justify-between justify-center flex-wrap  items-center py-10">
+    <div className="w-full bg-[#e3e3e3] h-full">
+      <div className="container flex flex-row mx-auto relative md:justify-between justify-center flex-wrap  items-center py-10 space-x-7 md:space-x-0">
         <Image
           alt="Abbeydale brewery company logo"
           src={Abbeydale}
@@ -26,7 +26,7 @@ const LogoList = () => {
         <Image
           alt="Abbeydale brewery company logo"
           src={Graft}
-          height={800}
+          height={500}
           className="w-auto"
         />
         <Image

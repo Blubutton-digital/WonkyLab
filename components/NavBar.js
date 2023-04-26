@@ -10,8 +10,8 @@ const NavBar = () => {
 
   return (
     <div className="bg-gray-100 h-20 w-full fixed z-50">
-      <div className="container mx-auto flex flex-row relative justify-between">
-        <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-[#292929]">
+      <div className="container mx-auto flex flex-row relative justify-between px-4">
+        <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-dark">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
@@ -63,7 +63,7 @@ const NavBar = () => {
             Contact us
           </Link>
           <p className="text-sm xlg:text:lg">Open today til 23:00</p>
-          <div className=" flex flex-row space-x-4 absolute right-0 -translate-y-full">
+          <div className=" flex flex-row space-x-4 absolute right-4 -translate-y-full">
             <svg
               width="20"
               height="20"
