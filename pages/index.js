@@ -6,6 +6,8 @@ import InfoBar from "@/components/InfoBar";
 import Info from "@/components/Info";
 import Offer from "@/components/Offer";
 import LogoList from "@/components/LogoList";
+import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +29,11 @@ export default function Home() {
         <Info />
         <Offer />
         <LogoList />
+        <Banner />
       </main>
+      <footer className="">
+        <Footer />
+      </footer>
     </>
   );
 }
