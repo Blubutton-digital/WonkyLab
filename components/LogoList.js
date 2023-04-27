@@ -79,7 +79,7 @@ const LogoList = () => {
     //   </div>
     // </div>
 
-    <div className="w-full bg-red-100 ">
+    <div className="w-full bg-[#ebebeb]">
       <div className="container mx-auto">
         {/* Slider */}
         <div className="relative w-full grid overflow-hidden place-items-center">
