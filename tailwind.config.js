@@ -17,13 +17,7 @@ module.exports = {
         dark: "#292929",
       },
       animation: {
-        scroll: "5s slide infinite linear",
-      },
-      keyframes: {
-        infinite: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
+        scroll: "20s scroll infinite linear",
       },
       backgroundImage: {
         banner: 'url("../public/Images/Banner-bg.png")',
