@@ -84,7 +84,7 @@ const LogoList = () => {
         {/* Slider */}
         <div className="relative w-full grid overflow-hidden place-items-center">
           {/* slide track */}
-          <div className="flex animate-scroll justify-between max-h-14 my-8 overflow-hidden ">
+          <div className="flex animate-scroll justify-between min-h-fit overflow-hidden items-center my-4 space-x-5 ">
             {/* slide */}
             <div className="grid place-items-center w-[150px]">
               <Image
