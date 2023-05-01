@@ -4,7 +4,7 @@ import Logo from "../public/Logo.png";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center pb-8">
+    <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center pb-8 md:pb-0">
       <div className="flex flex-col flex-1 mt-4 sm:mt-10 order-3 sm:order-1">
         <p className="text-sm font-lato text-dark">
           All rights reserved. The Crafty One
