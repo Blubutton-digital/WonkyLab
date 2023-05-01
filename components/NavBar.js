@@ -46,7 +46,7 @@ const NavBar = () => {
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="/"
+            href="/events"
           >
             Events
           </Link>
@@ -121,21 +121,21 @@ const NavBar = () => {
                 Home
               </Link>
               <Link
-                href="#About"
+                href="/about"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
                 Our Story
               </Link>
               <Link
-                href="#Promotion"
+                href="#offers"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
                 What we offer
               </Link>
               <Link
-                href="#Shop"
+                href="/events"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
