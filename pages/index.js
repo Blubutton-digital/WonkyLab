@@ -8,6 +8,7 @@ import Offer from "@/components/Offer";
 import LogoList from "@/components/LogoList";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,14 +25,15 @@ export default function Home() {
         <NavBar />
         <Hero />
       </header>
-      <main className="bg-bg">
+      <main className="bg-darkbg">
         <InfoBar />
         <Info />
         <Offer />
         <LogoList />
         <Banner />
+        <Contact />
       </main>
-      <footer className="">
+      <footer>
         <Footer />
       </footer>
     </>

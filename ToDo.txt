@@ -1,3 +1,4 @@
 [] - Fix logo carousel
     - Add transparent gradient to ends of carousel
 [] - finishing styling beer carousel 
+[] - make sure images sttay within aspect ratio
