@@ -10,7 +10,7 @@ const events = () => {
       <header className="pb-20">
         <NavBar />
       </header>
-      <main className="bg-darkbg lg:pt-40 sm:pt-12 pt-4">
+      <main className="bg-darkbg lg:pt-40 pt-12">
         <section className="container mx-auto">
           <div className="text-center px-4">
             <H3>Upcoming Events</H3>
