@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-gray-100 h-20 w-full fixed z-50">
-      <div className="container mx-auto flex flex-row relative justify-between px-4">
+      <div className="container mx-auto flex flex-row relative justify-between">
         <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-dark">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
@@ -26,7 +26,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="/"
+            href="#offers"
           >
             What we offer
           </Link>
@@ -58,7 +58,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="/"
+            href="#contact"
           >
             Contact us
           </Link>
@@ -149,7 +149,7 @@ const NavBar = () => {
                 Book with us
               </Link>
               <Link
-                href="#Contacts"
+                href="#contact"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
