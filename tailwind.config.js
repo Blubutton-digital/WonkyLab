@@ -16,6 +16,7 @@ module.exports = {
         bg: "#4D545D",
         dark: "#292929",
         darkbg: "#3A414B",
+        // white: "#d7d7d7",
       },
       animation: {
         scroll: "20s scroll infinite linear",
