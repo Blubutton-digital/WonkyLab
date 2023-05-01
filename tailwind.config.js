@@ -15,6 +15,7 @@ module.exports = {
         wonky: "#FFA928",
         bg: "#4D545D",
         dark: "#292929",
+        darkbg: "#3A414B",
       },
       animation: {
         scroll: "20s scroll infinite linear",
