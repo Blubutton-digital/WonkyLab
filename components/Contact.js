@@ -4,7 +4,7 @@ import Map from "./Map";
 
 const Contact = () => {
   return (
-    <section>
+    <section className="scroll-mt-14" id="contact">
       <div className=" container mx-auto py-24 px-4">
         <div className="text-center">
           <H3>Contact Us</H3>
