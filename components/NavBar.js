@@ -52,7 +52,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="/"
+            href="/book"
           >
             Book with us
           </Link>
@@ -142,7 +142,7 @@ const NavBar = () => {
                 Events
               </Link>
               <Link
-                href="#Contacts"
+                href="/book"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
