@@ -28,8 +28,7 @@ const Info = ({ reverse }) => {
           alt="Photo of the shop front"
           src={Shopfront}
           fill
-          className="rounded-lg"
-          objectFit="cover"
+          className="rounded-lg object-cover"
         />
       </div>
     </div>
