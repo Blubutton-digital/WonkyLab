@@ -20,7 +20,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="/"
+            href="/about"
           >
             Our Story
           </Link>
