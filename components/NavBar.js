@@ -26,7 +26,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="#offers"
+            href="/#offers"
           >
             What we offer
           </Link>
@@ -58,7 +58,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
-            href="#contact"
+            href="/#contact"
           >
             Contact us
           </Link>
@@ -128,7 +128,7 @@ const NavBar = () => {
                 Our Story
               </Link>
               <Link
-                href="#offers"
+                href="/#offers"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
@@ -149,7 +149,7 @@ const NavBar = () => {
                 Book with us
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="text-4xl"
                 onClick={() => setActive(!active)}
               >
