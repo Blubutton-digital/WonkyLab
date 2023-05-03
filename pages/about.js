@@ -8,6 +8,7 @@ import Image from "next/image";
 import Macca from "../public/Images/Macca-shopfront.png";
 import Shop from "../public/Images/IMAGE- OPEN.png";
 import Link from "next/link";
+import LogoList from "@/components/LogoList";
 
 const _about = () => {
   return (
@@ -76,6 +77,7 @@ const _about = () => {
             </div>
           </div>
         </section>
+        <LogoList />
       </main>
 
       <Footer />
