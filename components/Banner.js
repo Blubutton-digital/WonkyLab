@@ -1,6 +1,7 @@
 import React from "react";
 import H3 from "./H3";
 // g-[url('../public/Images/Banner-bg.png')]
+import BannerBG from "../public/Images/Banner-bg.png";
 const Banner = () => {
   return (
     <div className="w-screen bg-banner bg-cover bg-center bg-no-repeat py-28 overflow-hidden">

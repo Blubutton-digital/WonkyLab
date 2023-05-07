@@ -24,11 +24,19 @@ const Info = ({ reverse }) => {
         </p>
       </div>
       <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 md:mb-24 mb-24 ">
-        <Image
+        {/* <Image
           alt="Photo of the shop front"
           src={Shopfront}
           fill
           className="rounded-lg object-cover"
+        /> */}
+        <Image
+          src={Shopfront}
+          alt="Photo of shop front"
+          className="h-full w-full object-cover object-top rounded-md"
+          fill
+          priority
+          placeholder="blur"
         />
       </div>
     </div>

@@ -20,10 +20,12 @@ const _about = () => {
         <section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 pb-24 gap-x-20">
           <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 order-2 lg:order-1">
             <Image
-              alt="Photo of the shop front"
               src={Macca}
+              alt="Photo of shop front"
+              className="h-full w-full object-cover object-top rounded-md"
               fill
-              className="rounded-lg object-contain lg:object-cover"
+              priority
+              placeholder="blur"
             />
           </div>
           <div className="lg:w-6/12 w-full h-full relative flex flex-col  my-auto order-1 lg:order-2">
@@ -68,11 +70,19 @@ const _about = () => {
               </p>
             </div>
             <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
-              <Image
+              {/* <Image
                 alt="Photo of the shop front"
                 src={Shop}
                 fill
                 className="rounded-lg object-cover"
+              /> */}
+              <Image
+                src={Shop}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover object-top rounded-md"
+                fill
+                priority
+                placeholder="blur"
               />
             </div>
           </div>
