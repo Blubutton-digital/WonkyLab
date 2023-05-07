@@ -2,7 +2,7 @@ import React from "react";
 import H3 from "./H3";
 import Image from "next/image";
 
-import Shopfront from "../public/Images/shop-front.jpg";
+import Shopfront from "../public/Images/shopFront.png";
 
 const Info = ({ reverse }) => {
   return (
