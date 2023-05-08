@@ -35,7 +35,6 @@ const Info = ({ reverse }) => {
           alt="Photo of shop front"
           className="h-full w-full object-cover object-top rounded-md"
           fill
-          priority
           placeholder="blur"
         />
       </div>

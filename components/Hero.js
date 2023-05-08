@@ -10,8 +10,8 @@ const Hero = () => {
         alt="Background image of the bar"
         fill
         className="object-cover -z-10"
-        quality={100}
         priority
+        placeholder="blur"
       />
 
       <div className="container mx-auto h-full z-50">

@@ -91,6 +91,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Abbeydale}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -98,6 +99,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Critters}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -105,6 +107,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Graft}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -112,6 +115,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Grizzy}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -119,6 +123,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Neepsend}
                 fill
+                placeholder="blur"
                 className="w-auto h-full"
               />
             </div>
@@ -129,6 +134,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Abbeydale}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -136,6 +142,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Critters}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -143,6 +150,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Graft}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -150,6 +158,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Grizzy}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -157,6 +166,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Neepsend}
                 fill
+                placeholder="blur"
                 className="w-auto h-full"
               />
             </div>
@@ -167,6 +177,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Abbeydale}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -174,6 +185,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Critters}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px]">
@@ -181,6 +193,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Graft}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -188,6 +201,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Grizzy}
                 className="w-auto h-full object-contain"
+                placeholder="blur"
               />
             </div>
             <div className="grid place-items-center w-[150px] relative">
@@ -195,6 +209,7 @@ const LogoList = () => {
                 alt="Abbeydale brewery company logo"
                 src={Neepsend}
                 fill
+                placeholder="blur"
                 className="w-auto h-full"
               />
             </div>

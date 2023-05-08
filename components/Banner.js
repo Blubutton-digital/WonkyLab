@@ -11,8 +11,6 @@ const Banner = () => {
         alt="Background image of 3 beers lined up"
         fill
         className="object-cover h-full w-full z-0"
-        quality={100}
-        priority
       />
       <div className="container mx-auto flex flex-row items-center justify-center px-4 relative">
         <div className="max-w-lg items-center text-center">
