@@ -1,10 +1,21 @@
 import React from "react";
 import H3 from "./H3";
-// g-[url('../public/Images/Banner-bg.png')]
 import BannerBG from "../public/Images/Banner-bg.png";
+import Image from "next/image";
+
 const Banner = () => {
   return (
-    <div className="w-screen bg-cover bg-center bg-no-repeat py-28 overflow-hidden banner">
+    <div className="w-screen bg-cover bg-center bg-no-repeat py-28 overflow-hidden">
+      <div className="absolute -z-10">
+        <Image
+          src={BannerBG}
+          alt="Background image of 3 beers lined up"
+          fill
+          className="object-cover"
+          quality={100}
+          priority
+        />
+      </div>
       <div className="container mx-auto flex flex-row items-center justify-center px-4">
         <div className="max-w-lg items-center text-center">
           <H3>Find us on social media</H3>
