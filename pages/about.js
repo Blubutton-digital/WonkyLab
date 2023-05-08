@@ -17,7 +17,7 @@ const _about = () => {
         <NavBar />
       </header>
       <main className="lg:pt-40 sm:pt-12 pt-4">
-        <section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 pb-24 gap-x-20">
+        <section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 md:pb-24 pb-14 gap-x-20">
           <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 order-2 lg:order-1">
             <Image
               src={Macca}
@@ -51,9 +51,9 @@ const _about = () => {
         </section>
 
         <section className="bg-darkbg">
-          <div className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 py-24 gap-x-20">
+          <div className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 md:py-24 py-14 gap-x-20">
             <div className="lg:w-6/12 w-full h-full relative flex flex-col  my-auto ">
-              <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
+              <p className="text-white lg:text-xl text-lg  font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 The opportunity to take over The Wonky Labrador has also tapped
                 into Mac’s love of community, and you’ll find this a welcoming
                 place for all walks of life, including our four legged friends!
@@ -69,12 +69,6 @@ const _about = () => {
               </p>
             </div>
             <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
-              {/* <Image
-                alt="Photo of the shop front"
-                src={Shop}
-                fill
-                className="rounded-lg object-cover"
-              /> */}
               <Image
                 src={Shop}
                 alt="Photo of shop front"

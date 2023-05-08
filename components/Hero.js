@@ -4,7 +4,7 @@ import HeroBg from "../public/Images/HeroBG.png";
 
 const Hero = () => {
   return (
-    <div className="w-screen h-screen bg-black/50 relative">
+    <div className="w-screen h-screen bg-black/40 relative">
       <Image
         src={HeroBg}
         alt="Background image of the bar"

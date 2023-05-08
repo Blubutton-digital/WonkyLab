@@ -23,7 +23,7 @@ const Info = ({ reverse }) => {
           a drink, our bar is the perfect choice!
         </p>
       </div>
-      <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 md:mb-24 mb-24 ">
+      <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 md:mb-24 mb-14 ">
         {/* <Image
           alt="Photo of the shop front"
           src={Shopfront}

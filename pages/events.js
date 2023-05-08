@@ -10,29 +10,29 @@ const events = () => {
       <header className="pb-20">
         <NavBar />
       </header>
-      <main className="bg-darkbg lg:pt-40 pt-12">
+      <main className="bg-darkbg lg:pt-40 pt-14">
         <section className="container mx-auto">
           <div className="text-center px-4">
             <H3>Upcoming Events</H3>
-            <p className="text-white text-xl max-w-4xl mx-auto mt-20 font-light tracking-wide leading-relaxed md:text-center text-left">
+            <p className="text-white text-xl max-w-4xl mx-auto md:mt-20 mt-14 font-light tracking-wide leading-relaxed md:text-center text-left">
               Here at The Wonkey Labrador, we hold a range of regular and
               featured events. Check out what is available below, you’re sure to
               find something you will enjoy!
             </p>
           </div>
 
-          <div className="mt-24 p-4">
+          <div className="md:mt-24 mt-14 px-4">
             <H3>March</H3>
             <Event />
             <Event />
           </div>
-          <div className=" p-4">
+          <div className="md:mt-24 mt-14 px-4">
             <H3>April</H3>
             <Event />
             <Event />
           </div>
 
-          <div className="text-center py-28 px-4">
+          <div className="text-center md:py-28 py-14 px-4">
             <H3>Whats on each week</H3>
             <div className="flex flex-col lg:flex-row text-white font-light text-left justify-around text-lg mt-20 lg:gap-y-0 gap-y-12 ">
               <div className="flex flex-col gap-y-3 lg:max-w-md w-full">
