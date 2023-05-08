@@ -27,40 +27,76 @@ const Book = () => {
             <H3 black>Book out our venue</H3>
           </span>
           {/* Gallery */}
-          <div className="grid gap-2 lg:gap-6 xl:gap-14 grid-cols-4 md:grid-cols-10 grid-rows-2  w-full mt-28 max-h-[565px]">
-            <div className="h-full w-full col-span-2 md:col-span-4 row-span-2">
-              <Image
+          <div className="grid gap-2 lg:gap-6 xl:gap-14 grid-cols-4 md:grid-cols-10 grid-rows-2  w-full mt-28 max-h-[565px] xl:max-h-[700px]">
+            <div className="h-full w-full col-span-2 md:col-span-4 row-span-2 relative">
+              {/* <Image
                 alt="Image of drinks cheersing"
                 src={Cheers}
                 className="object-cover h-full w-full rounded-md"
+              /> */}
+              <Image
+                src={Cheers}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover rounded-md"
+                priority
+                fill
+                placeholder="blur"
               />
             </div>
-            <div className="md:col-span-3 col-span-2">
-              <Image
+            <div className="md:col-span-3 col-span-2 realtive">
+              {/* <Image
                 alt="Image of drinks cheersing"
                 src={Table}
                 className="object-cover  h-full w-full rounded-md"
+              /> */}
+              <Image
+                src={Table}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover object-top rounded-md"
+                priority
+                placeholder="blur"
               />
             </div>
-            <div className="md:col-span-3 col-span-2">
-              <Image
+            <div className="md:col-span-3 col-span-2 relative">
+              {/* <Image
                 alt="Image of drinks cheersing"
                 src={Stool}
                 className="object-cover  h-full w-full rounded-md"
+              /> */}
+              <Image
+                src={Stool}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover object-top rounded-md"
+                priority
+                placeholder="blur"
               />
             </div>
-            <div className="col-span-4">
-              <Image
+            <div className="col-span-4 relative">
+              {/* <Image
                 alt="Image of drinks cheersing"
                 src={Drinks}
                 className="object-cover md:block hidden  h-full w-full rounded-md"
+              /> */}
+              <Image
+                src={Drinks}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover md:block hidden  object-top rounded-md"
+                priority
+                placeholder="blur"
               />
             </div>
-            <div className="col-span-2">
-              <Image
+            <div className="col-span-2 relative">
+              {/* <Image
                 alt="Image of drinks cheersing"
                 src={Pour}
                 className="md:block hidden object-cover  h-full w-full rounded-md"
+              /> */}
+              <Image
+                src={Pour}
+                alt="Photo of shop front"
+                className="h-full w-full object-cover md:block hidden  object-top rounded-md"
+                priority
+                placeholder="blur"
               />
             </div>
           </div>
