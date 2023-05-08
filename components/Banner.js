@@ -5,18 +5,16 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-screen bg-cover bg-center bg-no-repeat py-28 overflow-hidden">
-      <div className="absolute -z-10">
-        <Image
-          src={BannerBG}
-          alt="Background image of 3 beers lined up"
-          fill
-          className="object-cover"
-          quality={100}
-          priority
-        />
-      </div>
-      <div className="container mx-auto flex flex-row items-center justify-center px-4">
+    <div className="w-screen bg-cover bg-center bg-no-repeat py-28 overflow-hidden relative">
+      <Image
+        src={BannerBG}
+        alt="Background image of 3 beers lined up"
+        fill
+        className="object-cover h-full w-full z-0"
+        quality={100}
+        priority
+      />
+      <div className="container mx-auto flex flex-row items-center justify-center px-4 relative">
         <div className="max-w-lg items-center text-center">
           <H3>Find us on social media</H3>
           <p className="text-white text-base font-lato mt-8">
