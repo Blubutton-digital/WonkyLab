@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const InfoBar = () => {
@@ -13,9 +14,12 @@ const InfoBar = () => {
           </p>
           <p className="font-lato text-base font-light tracking-wide">19:00</p>
         </span>
-        <button className="w-full bg-wonky rounded-md py-[6px] font-lato font-light text-base tracking-wide hover:bg-[#E48E0D]">
+        <Link
+          href="/events"
+          className="w-full bg-wonky rounded-md py-[6px] font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-center"
+        >
           View more details
-        </button>
+        </Link>
       </div>
       <div className="w-full sm:w-1/2 h-full sm:max-h-[168px] sm:max-w-[300px] m-auto flex flex-col justify-between p-5 sm:p-0 sm:space-y-0 space-y-0 gap-4 sm:gap-0">
         <h3 className="text-2xl font-playfair font-normal tracking-wide">
@@ -26,9 +30,12 @@ const InfoBar = () => {
           Reserve our top floor or the whole bar for any occasion
         </p>
 
-        <button className="w-full bg-wonky rounded-md py-[6px] font-lato font-light text-base tracking-wide hover:bg-[#E48E0D]">
+        <Link
+          href="/book"
+          className="w-full bg-wonky rounded-md py-[6px] font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-center"
+        >
           Find out more
-        </button>
+        </Link>
       </div>
     </div>
   );
