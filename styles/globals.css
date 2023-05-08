@@ -15,6 +15,10 @@
     animation-play-state: paused;
   }
 }
+
+.banner {
+  background-image: url("../public/Images/Banner-bg.png");
+}
 .map {
   height: 100%;
   width: 100%;

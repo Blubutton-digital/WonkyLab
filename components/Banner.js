@@ -4,7 +4,7 @@ import H3 from "./H3";
 import BannerBG from "../public/Images/Banner-bg.png";
 const Banner = () => {
   return (
-    <div className="w-screen bg-banner bg-cover bg-center bg-no-repeat py-28 overflow-hidden">
+    <div className="w-screen bg-cover bg-center bg-no-repeat py-28 overflow-hidden banner">
       <div className="container mx-auto flex flex-row items-center justify-center px-4">
         <div className="max-w-lg items-center text-center">
           <H3>Find us on social media</H3>
