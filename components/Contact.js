@@ -10,7 +10,7 @@ const Contact = () => {
           <H3>Contact Us</H3>
         </div>
         <div className="flex lg:flex-row flex-col pt-12 gap-x-20">
-          <div className="lg:w-2/3 w-full">
+          <div className="lg:w-2/3 w-full h-96 lg:h-auto">
             <Map />
           </div>
           <div className="lg:w-1/3 w-full flex lg:flex-col mt-10 lg:mt-0 flex-wrap justify-between gap-x-7 gap-y-12">
@@ -34,7 +34,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-y-3">
-                  <div className="flex flex-row justify-between lg:gap-x-28 gap-x-12">
+                  <div className="flex flex-row justify-between xl:gap-x-28 lg:gap-x-10 gap-x-12">
                     <p>Monday</p>
                     <p>14:00 - 23:00</p>
                   </div>
