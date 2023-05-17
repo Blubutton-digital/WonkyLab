@@ -58,6 +58,13 @@
   --swiper-pagination-bottom: 0;
 
   color: #292929;
+
+  --orange: #fd9940;
+  --darkorange: #dd7d25;
+  --platinum: #e5e5e5;
+  --black: #2b2d42;
+  --white: #fff;
+  --thumb: #edf2f4;
 }
 
 @keyframes scroll {
@@ -67,4 +74,15 @@
   100% {
     transform: translateX(calc(-150px * 5));
   }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

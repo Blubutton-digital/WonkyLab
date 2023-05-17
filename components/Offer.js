@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import H3 from "./H3";
 import Card from "./Card";
+import Carousel from "./Carousel";
 import { Beers } from "../data/beers";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +41,7 @@ const Offer = () => {
       </div>
       <div className="relative container mx-auto">
         <Stamp className="absolute top-0 left-0 lg:-translate-y-3/4 lg:-translate-x-10 -translate-x-10 -translate-y-[70%] xl:opacity-40 opacity-20 scale-75 lg:scale-100  sm:block" />
-        <Swiper
+        {/* <Swiper
           slidesPerView={1}
           spaceBetween={10}
           pagination={{
@@ -79,7 +80,7 @@ const Offer = () => {
           <SwiperSlide>Slide 6</SwiperSlide>
           <SwiperSlide>Slide 7</SwiperSlide>
           <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide> */}
+          <SwiperSlide>Slide 9</SwiperSlide> 
 
           {Beers.map((item, key) => {
             return (
@@ -88,7 +89,13 @@ const Offer = () => {
               </SwiperSlide>
             );
           })}
-        </Swiper>
+        </Swiper> 
+        */}
+        <Carousel count={Beers.length}>
+          {Beers.map((item, key) => {
+            return <Card info={item} key={key} />;
+          })}
+        </Carousel>
       </div>
       {/* <div className="container mx-auto overflow-hidden flex flex-row">
         <div className="flex w-full  ">

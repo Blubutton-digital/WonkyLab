@@ -6,10 +6,10 @@ const Card = ({ info }) => {
   const { name, percent, brewery, vegan, gluten } = info;
 
   return (
-    <div className="max-w-sm   flex-1 items-center mx-auto">
+    <div className="max-w-sm w-full flex-1 items-center snap-start duration-75">
       {/* Image */}
       <div className=" relative h-[290px]">
-        <Image src={Tiny} fill alt="Image of beer" />
+        <Image src={Tiny} fill alt="Image of beer" className="object-cover" />
       </div>
       {/* bottom */}
       <div className=" flex flex-col items-start">
