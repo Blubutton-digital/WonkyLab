@@ -27,7 +27,7 @@ const Scrollbar = ({ count, carouselRef }) => {
         style={{
           width: scrollProgress + "%",
           height: "100%",
-          minWidth: "50px",
+          minWidth: "12.5%",
         }}
       ></div>
     </div>

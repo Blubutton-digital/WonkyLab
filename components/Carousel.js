@@ -7,7 +7,7 @@ const Carousel = ({ children, count }) => {
   const scrollToRight = (e) => {
     e.preventDefault();
     carouselRef.current.scrollBy({
-      left: carouselRef.current.clientWidth / count,
+      left: carouselRef.current.clientWidth / count + 10,
       top: 0,
       behavior: "smooth",
     });
@@ -16,7 +16,7 @@ const Carousel = ({ children, count }) => {
   const scrollToLeft = (e) => {
     e.preventDefault();
     carouselRef.current.scrollBy({
-      left: -carouselRef.current.clientWidth,
+      left: -carouselRef.current.clientWidth / 4,
       top: 0,
       behavior: "smooth",
     });
@@ -45,7 +45,7 @@ const Carousel = ({ children, count }) => {
         </button>
 
         <div
-          className="grid overflow-x-scroll auto-cols-[100%] grid-flow-col xl:auto-cols-[calc(25%-30px)] xl:gap-10 lg:auto-cols-[calc(calc(100%/3)-20px)] lg:gap-[30px] md:auto-cols-[calc(50%-10px)] md:gap-5 cards snap-mandatory snap-x pb-10 px]] w-full carousel"
+          className="grid overflow-x-scroll auto-cols-[calc(100%-10px)] grid-flow-col xl:auto-cols-[calc(25%-30px)] xl:gap-10 lg:auto-cols-[calc(calc(100%/3)-20px)] lg:gap-[30px] md:auto-cols-[calc(50%-10px)] md:gap-5 cards snap-mandatory snap-x pb-10 px]] w-full carousel gap-[10px]"
           ref={carouselRef}
         >
           {children}
