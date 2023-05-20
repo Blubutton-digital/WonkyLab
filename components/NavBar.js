@@ -9,7 +9,7 @@ const NavBar = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="bg-gray-100 h-20 w-full fixed z-50">
+    <div className="bg-[#ebebeb] h-20 w-full fixed z-50">
       <div className="container mx-auto flex flex-row relative justify-between">
         <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-dark">
           <Link
@@ -36,12 +36,12 @@ const NavBar = () => {
           alt="Logo for Wonky Lab"
           height={189}
           width={160}
-          className="-mt-[10px] bg-gray-100 rounded-md px-2 hidden lg:block"
+          className="-mt-[10px] bg-[#ebebeb] rounded-md px-2 hidden lg:block"
         />
         <Image
           src={Logo}
           alt="Logo for Wonky Lab"
-          className=" bg-gray-100 rounded-md px-2 block lg:hidden h-20 w-auto"
+          className=" bg-[#ebebeb] rounded-md px-2 block lg:hidden h-20 w-auto"
         />
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link

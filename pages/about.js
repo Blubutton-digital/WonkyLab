@@ -9,6 +9,7 @@ import Macca from "../public/Images/Macca-shopfront.png";
 import Shop from "../public/Images/IMAGE- OPEN.png";
 import Link from "next/link";
 import LogoList from "@/components/LogoList";
+import Banner from "@/components/Banner";
 
 const _about = () => {
   return (
@@ -65,7 +66,14 @@ const _about = () => {
                 Interested in being part of The Crafty One crew?
               </p>
               <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
-                Email wonkylabrador@gmail.com
+                Email:{" "}
+                <Link
+                  className="text-wonky"
+                  href="mailto:wonkylabrador@gmail.com"
+                >
+                  {" "}
+                  wonkylabrador@gmail.com
+                </Link>
               </p>
             </div>
             <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
@@ -81,6 +89,7 @@ const _about = () => {
           </div>
         </section>
         <LogoList />
+        <Banner />
       </main>
 
       <Footer />

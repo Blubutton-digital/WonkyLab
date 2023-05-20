@@ -21,7 +21,7 @@ const Book = () => {
       <header className="pb-20">
         <NavBar />
       </header>
-      <main className=" lg:pt-40 sm:pt-12 pt-4 ">
+      <main className=" lg:pt-40 sm:pt-12 pt-4 bg-[#ebebeb] ">
         <div className="container mx-auto p-4 lg:pb-40 pb-24">
           <span className="text-center">
             <H3 black>Book out our venue</H3>
