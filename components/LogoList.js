@@ -20,32 +20,32 @@ const LogoList = () => {
             alt="Abbeydale brewery company logo"
             src={Abbeydale}
             className="h-full object-contain  w-[150px]"
-            placeholder="blur"
+            priority
           />
 
           <Image
             alt="Abbeydale brewery company logo"
             src={Critters}
             className="h-full object-contain  w-[150px]"
-            placeholder="blur"
+            priority
           />
           <Image
             alt="Abbeydale brewery company logo"
             src={Graft}
             className="h-full object-contain  w-[150px]"
-            placeholder="blur"
+            priority
           />
           <Image
             alt="Abbeydale brewery company logo"
             src={Grizzy}
             className="h-full object-contain  w-[150px]"
-            placeholder="blur"
+            priority
           />
           <Image
             alt="Abbeydale brewery company logo"
             src={Neepsend}
             className="h-full object-contain  w-[150px]"
-            placeholder="blur"
+            priority
           />
         </InfiniteLooper>
 
