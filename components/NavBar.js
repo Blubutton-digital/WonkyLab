@@ -115,43 +115,43 @@ const NavBar = () => {
             >
               <Link
                 href="/"
-                className="text-4xl"
+                className="text-3xl"
                 onClick={() => setOpen(!open)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-4xl"
-                onClick={() => setActive(!active)}
+                className="text-3xl"
+                onClick={() => setOpen(!open)}
               >
                 Our Story
               </Link>
               <Link
                 href="/#offers"
-                className="text-4xl"
-                onClick={() => setActive(!active)}
+                className="text-3xl"
+                onClick={() => setOpen(!open)}
               >
                 What we offer
               </Link>
               <Link
                 href="/events"
-                className="text-4xl"
-                onClick={() => setActive(!active)}
+                className="text-3xl"
+                onClick={() => setOpen(!open)}
               >
                 Events
               </Link>
               <Link
                 href="/book"
-                className="text-4xl"
-                onClick={() => setActive(!active)}
+                className="text-3xl"
+                onClick={() => setOpen(!open)}
               >
                 Book with us
               </Link>
               <Link
                 href="/#contact"
-                className="text-4xl"
-                onClick={() => setActive(!active)}
+                className="text-3xl"
+                onClick={() => setOpen(!open)}
               >
                 Contact us
               </Link>
