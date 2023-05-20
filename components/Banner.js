@@ -21,7 +21,10 @@ const Banner = () => {
             following us on our social media
           </p>
           <div className="flex flex-row mt-8 gap-14 justify-center">
-            <Link href={"https://www.facebook.com"} target="_blank">
+            <Link
+              href={"https://www.facebook.com/thecraftyonesheffield"}
+              target="_blank"
+            >
               <svg
                 width="50"
                 height="50"
@@ -35,7 +38,10 @@ const Banner = () => {
                 />
               </svg>
             </Link>
-            <Link href={"https://www.instagram.com"} target="_blank">
+            <Link
+              href={"https://www.instagram.com/thecraftyone_sheffield/"}
+              target="_blank"
+            >
               <svg
                 width="50"
                 height="50"

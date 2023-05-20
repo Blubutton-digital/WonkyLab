@@ -76,7 +76,10 @@ const Footer = () => {
           />
         </div>
         <div className="flex flex-row gap-10 flex-1 items-end justify-end sm:mt-10 mt-0 order-2 sm:order-3">
-          <Link href={"https://www.facebook.com"} target="_blank">
+          <Link
+            href={"https://www.facebook.com/thecraftyonesheffield"}
+            target="_blank"
+          >
             <svg
               width="31"
               height="31"
@@ -90,7 +93,10 @@ const Footer = () => {
               />
             </svg>
           </Link>
-          <Link href={"https://www.instagram.com"} target="_blank">
+          <Link
+            href={"https://www.instagram.com/thecraftyone_sheffield/"}
+            target="_blank"
+          >
             <svg
               width="32"
               height="31"

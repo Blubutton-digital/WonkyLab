@@ -196,7 +196,10 @@ const NavBar = () => {
                 )}
               </div>
               <div className=" flex flex-row gap-x-4 absolute bottom-0 mb-4">
-                <Link href={"https://www.facebook.com"} target="_blank">
+                <Link
+                  href={"https://www.facebook.com/thecraftyonesheffield"}
+                  target="_blank"
+                >
                   <svg
                     width="30"
                     height="30"
@@ -210,7 +213,10 @@ const NavBar = () => {
                     />
                   </svg>
                 </Link>
-                <Link href={"https://www.instagram.com"} target="_blank">
+                <Link
+                  href={"https://www.instagram.com/thecraftyone_sheffield/"}
+                  target="_blank"
+                >
                   <svg
                     width="30"
                     height="30"
