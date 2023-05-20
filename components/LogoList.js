@@ -6,215 +6,50 @@ import Critters from "../public/Images/Logos/Critters.png";
 import Graft from "../public/Images/Logos/Graft.png";
 import Grizzy from "../public/Images/Logos/Grizzy.png";
 import Neepsend from "../public/Images/Logos/Neepsend.png";
+import InfiniteLooper from "./InfiniteLooper";
 
 const LogoList = () => {
   return (
-    // <div className="w-full bg-[#e3e3e3] h-full">
-    //   <div className="flex flex-row overflow-hidden py-14 bg-white relative after:absolute after:top-0 after:w-[250px] after:h-full after:z-20 after:right-0 after:bg-gradient-to-r after:from-transparent after:to-white before:absolute before:top-0 before:w-[250px] before:h-full before:z-20 before:left-0 before:bg-gradient-to-l before:from-transparent before:to-white hover:pause whitespace-nowrap">
-    //     <div className="hover:pause flex flex-row animate-scroll max-h-14 gap-12">
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Abbeydale}
-    //         height={120}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Critters}
-    //         height={100}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Graft}
-    //         height={500}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Grizzy}
-    //         height={100}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Neepsend}
-    //         height={70}
-    //         className="w-auto"
-    //       />
-    //     </div>
-    //     <div className="hover:pause flex flex-row animate-scroll max-h-14 gap-12">
-    //       {/* <div className="hover:pause logos-slide"> */}
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Abbeydale}
-    //         height={120}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Critters}
-    //         height={100}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Graft}
-    //         height={500}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Grizzy}
-    //         height={100}
-    //         className="w-auto"
-    //       />
-    //       <Image
-    //         alt="Abbeydale brewery company logo"
-    //         src={Neepsend}
-    //         height={70}
-    //         className="w-auto"
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
+    // STATIONARY LOGOS
 
     <div className="w-full bg-[#ebebeb]">
-      <div className="container mx-auto">
-        {/* Slider */}
-        <div className="relative w-full grid overflow-hidden place-items-center">
-          {/* slide track */}
-          <div className="flex animate-scroll justify-between min-h-fit overflow-hidden items-center my-4 space-x-5 ">
-            {/* slide */}
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Abbeydale}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Critters}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Graft}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Grizzy}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Neepsend}
-                fill
-                placeholder="blur"
-                className="w-auto h-full"
-              />
-            </div>
+      <div className=" p-4 container w-full mx-auto relative ">
+        {/* <div className="grid grid-flow-col overflow-x-scroll auto-cols-[calc(20%-30px)] gap-10 "> */}
+        <InfiniteLooper speed={30} direction="left">
+          <Image
+            alt="Abbeydale brewery company logo"
+            src={Abbeydale}
+            className="h-full object-contain  w-[150px]"
+            placeholder="blur"
+          />
 
-            {/* Duplicate */}
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Abbeydale}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Critters}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Graft}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Grizzy}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Neepsend}
-                fill
-                placeholder="blur"
-                className="w-auto h-full"
-              />
-            </div>
+          <Image
+            alt="Abbeydale brewery company logo"
+            src={Critters}
+            className="h-full object-contain  w-[150px]"
+            placeholder="blur"
+          />
+          <Image
+            alt="Abbeydale brewery company logo"
+            src={Graft}
+            className="h-full object-contain  w-[150px]"
+            placeholder="blur"
+          />
+          <Image
+            alt="Abbeydale brewery company logo"
+            src={Grizzy}
+            className="h-full object-contain  w-[150px]"
+            placeholder="blur"
+          />
+          <Image
+            alt="Abbeydale brewery company logo"
+            src={Neepsend}
+            className="h-full object-contain  w-[150px]"
+            placeholder="blur"
+          />
+        </InfiniteLooper>
 
-            {/* Duplicate */}
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Abbeydale}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Critters}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px]">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Graft}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Grizzy}
-                className="w-auto h-full object-contain"
-                placeholder="blur"
-              />
-            </div>
-            <div className="grid place-items-center w-[150px] relative">
-              <Image
-                alt="Abbeydale brewery company logo"
-                src={Neepsend}
-                fill
-                placeholder="blur"
-                className="w-auto h-full"
-              />
-            </div>
-          </div>
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

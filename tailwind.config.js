@@ -19,7 +19,7 @@ module.exports = {
         // white: "#d7d7d7",
       },
       animation: {
-        scroll: "20s scroll infinite linear",
+        scroll: "scroll infinite linear",
       },
       backgroundImage: {
         banner: 'url("../public/Images/Banner-bg.png")',
