@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(false);
 
   return (
     <div className="bg-[#ebebeb] h-20 w-full fixed z-50">
@@ -31,18 +30,21 @@ const NavBar = () => {
             What we offer
           </Link>
         </nav>
+
         <Image
           src={Logo}
           alt="Logo for Wonky Lab"
           height={189}
           width={160}
-          className="-mt-[10px] bg-[#ebebeb] rounded-md px-2 hidden lg:block"
+          className="-mt-[10px] bg-[#ebebeb] rounded-md px-2 object-cover hidden lg:block"
         />
-        <Image
-          src={Logo}
-          alt="Logo for Wonky Lab"
-          className=" bg-[#ebebeb] rounded-md px-2 block lg:hidden h-20 w-auto"
-        />
+        <Link href={"/"} className="relative block lg:hidden">
+          <Image
+            src={Logo}
+            alt="Logo for Wonky Lab"
+            className=" bg-[#ebebeb] rounded-md px-2  h-20 w-auto"
+          />
+        </Link>
         <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
