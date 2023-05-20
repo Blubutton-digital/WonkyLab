@@ -43,7 +43,7 @@ const InfiniteLooper = ({ speed, direction, children }) => {
 
   return (
     <div
-      className="w-full overflow-hidden relative  before:absolute before:left-0 before:w-40 before:z-50 before:bg-gradient-to-r before:from-[#ebebeb] before:to-transparent before:h-full after:absolute after:right-0 after:top-0 after:w-40 after:z-50 after:bg-gradient-to-l after:from-[#ebebeb] after:to-transparent after:h-full"
+      className="w-full overflow-hidden relative  before:absolute before:left-0 before:w-40 before:z-10 before:bg-gradient-to-r before:from-[#ebebeb] before:to-transparent before:h-full after:absolute after:right-0 after:top-0 after:w-40 after:z-10 after:bg-gradient-to-l after:from-[#ebebeb] after:to-transparent after:h-full"
       ref={outerRef}
     >
       <div
