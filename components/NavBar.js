@@ -195,7 +195,7 @@ const NavBar = () => {
                   </Link>
                 )}
               </div>
-              <div className=" flex flex-row gap-x-4 absolute top-0 mb-4">
+              <div className=" flex flex-row gap-x-4 absolute bottom-0 mb-4">
                 <Link href={"https://www.facebook.com"} target="_blank">
                   <svg
                     width="30"
@@ -262,7 +262,7 @@ const NavBar = () => {
               </Link>
               <Link
                 href="/#contact"
-                className="text-3xl"
+                className="text-3xl mb-10"
                 onClick={() => setOpen(!open)}
               >
                 Contact
