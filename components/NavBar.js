@@ -1,16 +1,34 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Logo from "../public/Logo.png";
 import Link from "next/link";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const [closeTime, setCloseTime] = useState("");
+
+  const closingTimes = {
+    1: "closed",
+    2: "22:00",
+    3: "23:00",
+    4: "23:00",
+    5: "23:00",
+    6: "15:00 - 23:00",
+    0: "20:00",
+  };
+  const today = new Date();
+  const day = today.getDay().toString();
+  // const day = 1;
+
+  useEffect(() => {
+    setCloseTime(closingTimes[day]);
+  }, [closeTime]);
 
   return (
-    <div className="bg-[#ebebeb] h-20 w-full fixed z-50">
+    <div className="bg-[#ebebeb] lg:h-24 h-20 w-full fixed z-50">
       <div className="container mx-auto flex flex-row relative justify-between">
-        <nav className="lg:flex w-full justify-between items-center pr-16 max-h-20 hidden text-dark">
+        <nav className="lg:flex w-full justify-between items-center pr-16 lg:max-h-24 max-h-20 hidden text-dark">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/"
@@ -45,7 +63,7 @@ const NavBar = () => {
             className=" bg-[#ebebeb] rounded-md px-2  h-20 w-auto"
           />
         </Link>
-        <nav className="lg:flex w-full justify-between items-center pl-16 max-h-20 hidden">
+        <nav className="lg:flex w-full justify-between items-center pl-16 lg:max-h-24 max-h-20 hidden">
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/events"
@@ -56,16 +74,41 @@ const NavBar = () => {
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/book"
           >
-            Book with us
+            Bookings
           </Link>
           <Link
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/#contact"
           >
-            Contact us
+            Contact
           </Link>
-          <p className="text-sm xlg:text:lg">Open today til 23:00</p>
-          <div className=" flex flex-row space-x-4 absolute right-4 -translate-y-full">
+          <div className=" flex flex-row items-center gap-x-2">
+            <svg
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.8269 7.93796V11.9069L15.8536 14.8836M21.9068 11.9069C21.9068 16.8388 17.8416 20.8369 12.8269 20.8369C7.81226 20.8369 3.74707 16.8388 3.74707 11.9069C3.74707 6.97493 7.81226 2.97681 12.8269 2.97681C17.8416 2.97681 21.9068 6.97493 21.9068 11.9069Z"
+                stroke="#000"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {day === 1 ? (
+              <Link href="/#contact" className="text-sm xlg:text:lg">
+                Closed
+              </Link>
+            ) : (
+              <Link href="/#contact" className="text-sm xlg:text:lg">
+                {closeTime}
+              </Link>
+            )}
+          </div>
+          <div className=" flex flex-row gap-x-4 absolute -translate-y-full right-0 mb-4">
             <Link href={"https://www.facebook.com"} target="_blank">
               <svg
                 width="20"
@@ -114,7 +157,7 @@ const NavBar = () => {
             <nav
               className={
                 open
-                  ? "flex flex-col fixed inset-0 top-14 bg-gray-100  transition-all items-center justify-evenly -z-10"
+                  ? "flex flex-col fixed inset-0 top-14 bg-[#ebebeb]  transition-all items-center justify-evenly -z-10"
                   : "flex flex-col fixed inset-0 -translate-x-full top-14 bg-white transition-all items-center justify-evenly"
               }
             >
