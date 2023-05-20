@@ -1,5 +1,5 @@
 import React from "react";
-import Tiny from "../public/Images/Beers/tiny-gangsta.jpg";
+import Tiny from "../public/Images/Beers/Tiny.png";
 import Image from "next/image";
 
 const Card = ({ info }) => {
