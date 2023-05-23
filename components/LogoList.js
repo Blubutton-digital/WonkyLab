@@ -15,7 +15,7 @@ const LogoList = () => {
     <div className="w-full bg-[#ebebeb]">
       <div className=" p-4 container w-full mx-auto relative ">
         {/* <div className="grid grid-flow-col overflow-x-scroll auto-cols-[calc(20%-30px)] gap-10 "> */}
-        <InfiniteLooper speed={30} direction="left">
+        <InfiniteLooper speed={70} direction="left">
           <Image
             alt="Abbeydale brewery company logo"
             src={Abbeydale}
