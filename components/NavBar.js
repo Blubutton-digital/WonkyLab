@@ -188,7 +188,7 @@ const NavBar = () => {
                 ) : (
                   <Link
                     href="/#contact"
-                    className="text-sm xlg:text:lg"
+                    className="text-lg xlg:text:lg"
                     onClick={() => setOpen(!open)}
                   >
                     {closeTime}
