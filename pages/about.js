@@ -23,7 +23,7 @@ const _about = () => {
             <Image
               src={Macca}
               alt="Photo of shop front"
-              className="h-full w-full object-cover object-top rounded-md"
+              className="h-full w-full object-cover lg:object-top rounded-md object-center"
               fill
               placeholder="blur"
             />
@@ -81,8 +81,6 @@ const _about = () => {
                 src={Shop}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover object-top rounded-md"
-                fill
-                priority
                 placeholder="blur"
               />
             </div>
