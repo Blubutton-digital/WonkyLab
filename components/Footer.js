@@ -50,7 +50,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col flex-1 sm:mt-10 w-full text-center">
           <p className="text-sm font-lato text-dark">
-            All rights reserved. The Crafty One
+            All rights reserved. The Wonky Labrador
           </p>
           <p className="text-sm font-lato text-dark">
             Website by BluButton Digital
@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="container mx-auto hidden sm:flex flex-row justify-between items-center pb-8 md:pb-0">
         <div className="flex flex-col flex-1 mt-4 sm:mt-10 order-3 sm:order-1">
           <p className="text-sm font-lato text-dark">
-            All rights reserved. The Crafty One
+            All rights reserved. The Wonky Labrador
           </p>
           <p className="text-sm font-lato text-dark">
             Website by BluButton Digital
