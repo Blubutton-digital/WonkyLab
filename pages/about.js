@@ -6,7 +6,7 @@ import React from "react";
 import Image from "next/image";
 
 import Macca from "../public/Images/Macca-shopfront.png";
-import Shop from "../public/Images/IMAGE- OPEN.png";
+import Shop from "../public/Images/open-sign.png";
 import Link from "next/link";
 import LogoList from "@/components/LogoList";
 import Banner from "@/components/Banner";
