@@ -143,7 +143,6 @@ const Book = () => {
             </span>
             <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto"
               name="contact"
-              method="POST"
               data-netlify="true"
               action="/book?success=true"
             >
