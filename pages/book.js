@@ -145,7 +145,7 @@ const Book = () => {
               name="contact"
               method="POST"
               data-netlify="true"
-            // action="book?success=true"
+              action="/book"
             >
               {/* Name */}
               <div className="sm:col-span-3">
