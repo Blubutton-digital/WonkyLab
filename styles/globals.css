@@ -19,6 +19,7 @@
 .banner {
   background-image: url("../public/Images/Banner-bg.png");
 }
+
 .map {
   height: 100%;
   width: 100%;
@@ -47,6 +48,7 @@
   justify-content: center;
   align-items: center;
 }
+
 :root {
   --swiper-navigation-color: #ffa928;
   --swiper-navigation-size: 44px;
@@ -71,6 +73,7 @@
   from {
     transform: translateX(0px);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -96,6 +99,15 @@
 /* Hide scrollbar for IE, Edge and Firefox */
 .carousel,
 .looper__listInstance {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
+
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+} */

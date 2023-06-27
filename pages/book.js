@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
+import Image from "next/image";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import NavBar from "@/components/NavBar";
 import H3 from "@/components/H3";
-import Image from "next/image";
-
-import DatePicker from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
 
 import Cheers from "../public/Images/booking/cheers.png";
 import Table from "../public/Images/booking/table.png";
@@ -15,7 +16,11 @@ import Drinks from "../public/Images/booking/drinks.png";
 import Footer from "@/components/Footer";
 
 const Book = () => {
-  const [date, setDate] = useState(new Date());
+  const dateRef = useRef();
+  // const date = new Date();
+  const [selecedDate, setSelectedDate] = useState(new Date())
+  const minDate = selecedDate.toISOString().slice(0, 10);
+
   return (
     <div>
       <header className="pb-20">
@@ -127,14 +132,21 @@ const Book = () => {
               <H3>Booking form</H3>
             </span>
 
-            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto">
+            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto" name="contact" method="POST" data-netlify="true" >
               {/* Name */}
+              <input
+                type="checkbox"
+                id=""
+                className="hidden"
+                style={{ display: "none" }}
+                {...register("botcheck")}></input>
+
               <div className="sm:col-span-3">
                 <label
-                  htmlFor="namee"
+                  htmlFor="name"
                   className="block text-lg font-light leading-6 text-white"
                 >
-                  Name
+                  Name *
                 </label>
                 <div className="relative mt-2 rounded-md shadow-sm">
                   <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -166,10 +178,23 @@ const Book = () => {
                   <input
                     type="text"
                     name="name"
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    autoComplete="false"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.name
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
                     placeholder="John Smith"
+                    {...register("name", {
+                      required: "Name is required",
+                      maxLength: 80,
+                    })}
                   />
                 </div>
+                {errors.name && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.name.message}</small>
+                  </div>
+                )}
               </div>
               {/* Email */}
               <div className="sm:col-span-3">
@@ -177,7 +202,7 @@ const Book = () => {
                   htmlFor="email"
                   className="block text-base font-light leading-6 text-white"
                 >
-                  Email
+                  Email *
                 </label>
                 <div className="relative mt-2 rounded-md shadow-sm">
                   <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -209,10 +234,25 @@ const Book = () => {
                   <input
                     type="email"
                     name="email"
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.email
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
                     placeholder="info@yourmail.com"
+                    {...register("email", {
+                      required: "Enter your email",
+                      pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: "Please enter a valid email",
+                      },
+                    })}
                   />
                 </div>
+                {errors.email && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.email.message}</small>
+                  </div>
+                )}
               </div>
 
               {/* Number */}
@@ -246,10 +286,26 @@ const Book = () => {
                   <input
                     type="tel"
                     name="number"
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
                     placeholder="+44"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.number
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+
+                    {...register("number", {
+                      required: "Enter your number",
+                      pattern: {
+                        value: /^(\+|\d)[0-9]{7,16}$/,
+                        message: "Please enter your number",
+                      },
+                    })}
                   />
                 </div>
+                {errors.number && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.number.message}</small>
+                  </div>
+                )}
               </div>
               {/* Date */}
               <div className="sm:col-span-3">
@@ -259,7 +315,7 @@ const Book = () => {
                 >
                   Choose Date
                 </label>
-                <div className="relative mt-2 rounded-md shadow-sm">
+                <div className="relative mt-2 rounded-md shadow-sm" >
                   <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 z-50">
                     <span className="text-gray-500 sm:text-sm">
                       <svg
@@ -279,18 +335,39 @@ const Book = () => {
                       </svg>
                     </span>
                   </div>
-                  {/* <input
+                  <input
                     type="date"
                     name="date"
-                    className="block w-full rounded-md border-0 py-2 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    id="datePicker"
+                    min={minDate}
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light pointer-events-auto ${errors.message
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
                     placeholder="Select Date"
-                  /> */}
-                  <DatePicker
-                    selected={date}
-                    onChange={(newDate) => setDate(newDate)}
-                    dateFormat="dd/MM/yyyy"
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    {...register("date", {
+                      required: "Please select a date",
+                    })}
                   />
+                  {/* <DatePicker
+                    selected={selecedDate}
+                    id="date"
+                    name="date"
+                    dateFormat="dd/MM/yyyy"
+                    // onChange={(newDate) => setMessage(...message, newDate)}
+                    onChange={(newDate) => setSelectedDate(newDate)}
+                    startDate={minDate}
+                    required
+                    // className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.date
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+                  // {...register("date", {
+                  //   required: "Please select a date",
+                  // })}
+                  // ref={}
+                  /> */}
 
                   <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none cursor-pointer">
                     <svg
@@ -311,6 +388,11 @@ const Book = () => {
                     </svg>
                   </div>
                 </div>
+                {errors.message && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.name.message}</small>
+                  </div>
+                )}
               </div>
 
               {/* Text */}
@@ -356,17 +438,59 @@ const Book = () => {
                   <textarea
                     name="message"
                     rows={3}
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
                     defaultValue={""}
                     placeholder=" Let us know what the event is for, how many people will attend etc"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.message
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+
+                    {...register("message", {
+                      required: "A message is required",
+                    })}
                   />
                 </div>
+                {errors.message && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.message.message}</small>
+                  </div>
+                )}
               </div>
 
               <button className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
-                Submit
+                {isSubmitting ? (
+                  <svg
+                    className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24">
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                ) : (
+                  "Submit Booking"
+                )}
               </button>
             </form>
+            {isSubmitSuccessful && isSuccess && (
+              <div className="mt-3 text-sm text-center text-green-500">
+                {message || "Success. Message sent successfully"}
+              </div>
+            )}
+            {isSubmitSuccessful && !isSuccess && (
+              <div className="mt-3 text-sm text-center text-red-500">
+                {message || "Something went wrong. Please try later."}
+              </div>
+            )}
           </div>
         </div>
       </main>
