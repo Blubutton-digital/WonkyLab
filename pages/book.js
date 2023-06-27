@@ -145,7 +145,7 @@ const Book = () => {
               name="contact"
               method="POST"
               data-netlify="true"
-              action="book?success=true"
+            // action="book?success=true"
             >
               {/* Name */}
               <div className="sm:col-span-3">
@@ -400,7 +400,7 @@ const Book = () => {
                 </div>
               </div>
 
-              <button className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
+              <button type='submit' className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
                 Submit booking
               </button>
             </form>
