@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-
-import { useRouter } from "next/router";
+import React, { useState, useRef, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
 import Image from "next/image";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -16,21 +16,56 @@ import Drinks from "../public/Images/booking/drinks.png";
 import Footer from "@/components/Footer";
 
 const Book = () => {
+  const dateRef = useRef();
   // const date = new Date();
   const [selecedDate, setSelectedDate] = useState(new Date())
   const minDate = selecedDate.toISOString().slice(0, 10);
 
-  const [success, setSuccess] = useState(false);
 
 
 
+  const {
+    register,
+    handleSubmit,
+    reset,
+    watch,
+    control,
+    setValue,
+    formState: { errors, isSubmitSuccessful, isSubmitting },
+  } = useForm({
+    mode: "onTouched",
+  });
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [message, setMessage] = useState(false);
 
-  useEffect(() => {
-    if (window.location.search.includes('success=true')) {
-      setSuccess(true);
-    }
-  }, []);
+  // Please update the Access Key in the .env
+  const apiKey = process.env.NEXT_PUBLIC_WEB_FORM_API_KEY;
 
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: apiKey,
+    settings: {
+      from_name: "Wonky Labrador website booking form",
+      subject: "New Contact Message from your Website",
+    },
+    onSuccess: (msg, data) => {
+      setMessage(msg, { date: selecedDate });
+      console.log(msg)
+      console.log(data)
+      setIsSuccess(true);
+      reset();
+    },
+    onError: (msg, data) => {
+      setIsSuccess(false);
+      setMessage(msg);
+    },
+  });
+
+  const focus = () => {
+    // console.log(dateRef.current.children[1].children[1])
+    // dateRef.current.focus()
+    dateRef.current.children[1].children[1].focus()
+
+  }
   return (
     <div>
       <header className="pb-20">
@@ -141,12 +176,16 @@ const Book = () => {
             <span className="mt-40 text-center">
               <H3>Booking form</H3>
             </span>
-            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto"
-              name="contact"
-              data-netlify="true"
-              action="/book?success=true"
-            >
+
+            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto" onSubmit={handleSubmit(onSubmit)} >
               {/* Name */}
+              <input
+                type="checkbox"
+                id=""
+                className="hidden"
+                style={{ display: "none" }}
+                {...register("botcheck")}></input>
+
               <div className="sm:col-span-3">
                 <label
                   htmlFor="name"
@@ -185,11 +224,22 @@ const Book = () => {
                     type="text"
                     name="name"
                     autoComplete="false"
-                    className='block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light border-gray-300 focus:border-wonky ring-wonky '
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.name
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
                     placeholder="John Smith"
-                    required
+                    {...register("name", {
+                      required: "Name is required",
+                      maxLength: 80,
+                    })}
                   />
                 </div>
+                {errors.name && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.name.message}</small>
+                  </div>
+                )}
               </div>
               {/* Email */}
               <div className="sm:col-span-3">
@@ -229,11 +279,25 @@ const Book = () => {
                   <input
                     type="email"
                     name="email"
-                    className='block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light border-gray-300 focus:border-wonky ring-wonky '
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.email
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
                     placeholder="info@yourmail.com"
-                    required
+                    {...register("email", {
+                      required: "Enter your email",
+                      pattern: {
+                        value: /^\S+@\S+$/i,
+                        message: "Please enter a valid email",
+                      },
+                    })}
                   />
                 </div>
+                {errors.email && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.email.message}</small>
+                  </div>
+                )}
               </div>
 
               {/* Number */}
@@ -268,10 +332,25 @@ const Book = () => {
                     type="tel"
                     name="number"
                     placeholder="+44"
-                    className='block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light border-gray-300 focus:border-wonky ring-wonky'
-                    required
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.number
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+
+                    {...register("number", {
+                      required: "Enter your number",
+                      pattern: {
+                        value: /^(\+|\d)[0-9]{7,16}$/,
+                        message: "Please enter your number",
+                      },
+                    })}
                   />
                 </div>
+                {errors.number && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.number.message}</small>
+                  </div>
+                )}
               </div>
               {/* Date */}
               <div className="sm:col-span-3">
@@ -301,7 +380,7 @@ const Book = () => {
                       </svg>
                     </span>
                   </div>
-                  {/* <input
+                  <input
                     type="date"
                     name="date"
                     id="datePicker"
@@ -314,8 +393,8 @@ const Book = () => {
                     {...register("date", {
                       required: "Please select a date",
                     })}
-                  /> */}
-                  <DatePicker
+                  />
+                  {/* <DatePicker
                     selected={selecedDate}
                     id="date"
                     name="date"
@@ -324,8 +403,16 @@ const Book = () => {
                     onChange={(newDate) => setSelectedDate(newDate)}
                     startDate={minDate}
                     required
-                    className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
-                  />
+                    // className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.date
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+                  // {...register("date", {
+                  //   required: "Please select a date",
+                  // })}
+                  // ref={}
+                  /> */}
 
                   <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none cursor-pointer">
                     <svg
@@ -346,6 +433,11 @@ const Book = () => {
                     </svg>
                   </div>
                 </div>
+                {errors.message && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.name.message}</small>
+                  </div>
+                )}
               </div>
 
               {/* Text */}
@@ -393,25 +485,57 @@ const Book = () => {
                     rows={3}
                     defaultValue={""}
                     placeholder=" Let us know what the event is for, how many people will attend etc"
-                    className='block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light'
-                    required
+                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.message
+                      ? "border-red-600 focus:border-red-600 ring-red-100 "
+                      : "border-gray-300 focus:border-wonky ring-wonky "
+                      }`}
+
+                    {...register("message", {
+                      required: "A message is required",
+                    })}
                   />
                 </div>
+                {errors.message && (
+                  <div className="mt-1 text-wonky">
+                    <small>{errors.message.message}</small>
+                  </div>
+                )}
               </div>
 
-              <button type='submit' className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
-                Submit booking
+              <button className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
+                {isSubmitting ? (
+                  <svg
+                    className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24">
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                ) : (
+                  "Submit Booking"
+                )}
               </button>
             </form>
-            {success &&
-              <div className=" font-light text-lg text-green-100 leading-relaxed tracking-wide flex flex-col gap-y-12 pt-12 text-center">
-
-                <p>
-                  Thank you for submitting this form. Someone should get back to you
-                  within 24-48 hours.
-                </p>
+            {isSubmitSuccessful && isSuccess && (
+              <div className="mt-3 text-sm text-center text-green-500">
+                {message || "Success. Message sent successfully"}
               </div>
-            }
+            )}
+            {isSubmitSuccessful && !isSuccess && (
+              <div className="mt-3 text-sm text-center text-red-500">
+                {message || "Something went wrong. Please try later."}
+              </div>
+            )}
           </div>
         </div>
       </main>
