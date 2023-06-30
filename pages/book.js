@@ -16,13 +16,15 @@ import Drinks from "../public/Images/booking/drinks.png";
 import Footer from "@/components/Footer";
 
 const Book = () => {
-  const dateRef = useRef();
-  // const date = new Date();
-  const [selecedDate, setSelectedDate] = useState(new Date())
-  const minDate = selecedDate.toISOString().slice(0, 10);
+  const date = new Date();
 
 
-
+  const [selectedDate, setSelectedDate] = useState('')
+  const [message, setMessage] = useState()
+  const [inputDate, setInputDate] = useState()
+  // useEffect(() => {
+  //   setInputDate(selectedDate ? selectedDate.toLocaleDateString('en-GB') : '');
+  // }, [selectedDate]);
 
   const {
     register,
@@ -36,7 +38,6 @@ const Book = () => {
     mode: "onTouched",
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  const [message, setMessage] = useState(false);
 
   // Please update the Access Key in the .env
   const apiKey = process.env.NEXT_PUBLIC_WEB_FORM_API_KEY;
@@ -48,24 +49,27 @@ const Book = () => {
       subject: "New Contact Message from your Website",
     },
     onSuccess: (msg, data) => {
-      setMessage(msg, { date: selecedDate });
-      console.log(msg)
-      console.log(data)
-      setIsSuccess(true);
       reset();
+      setMessage('The message has sent. We will endeavour to reply within the next 24 hours.')
     },
     onError: (msg, data) => {
       setIsSuccess(false);
-      setMessage(msg);
     },
   });
 
-  const focus = () => {
-    // console.log(dateRef.current.children[1].children[1])
-    // dateRef.current.focus()
-    dateRef.current.children[1].children[1].focus()
+  const handleFormSubmit = (data) => {
+    const formData = {
+      ...data,
+      date: selectedDate ? selectedDate.toLocaleDateString("en-GB") : "",
+    };
+    console.log(formData)
+    onSubmit(formData);
+  };
 
-  }
+  // const handleChange = async (newDate) => {
+  //   await setSelectedDate(newDate)
+  // }
+
   return (
     <div>
       <header className="pb-20">
@@ -177,14 +181,16 @@ const Book = () => {
               <H3>Booking form</H3>
             </span>
 
-            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto" onSubmit={handleSubmit(onSubmit)} >
+            <form className="mt-10 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-6 max-w-7xl mx-auto"
+              // onSubmit={handleSubmit(onSubmit)}
+              onSubmit={handleSubmit(handleFormSubmit)}
+            >
               {/* Name */}
               <input
                 type="checkbox"
-                id=""
                 className="hidden"
                 style={{ display: "none" }}
-                {...register("botcheck")}></input>
+                {...register("botcheck")} />
 
               <div className="sm:col-span-3">
                 <label
@@ -380,39 +386,31 @@ const Book = () => {
                       </svg>
                     </span>
                   </div>
-                  <input
-                    type="date"
+
+
+                  {/* <input
                     name="date"
-                    id="datePicker"
-                    min={minDate}
-                    className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light pointer-events-auto ${errors.message
-                      ? "border-red-600 focus:border-red-600 ring-red-100 "
-                      : "border-gray-300 focus:border-wonky ring-wonky "
-                      }`}
-                    placeholder="Select Date"
-                    {...register("date", {
-                      required: "Please select a date",
-                    })}
-                  />
-                  {/* <DatePicker
-                    selected={selecedDate}
-                    id="date"
-                    name="date"
+                    type="text"
+                    value={selectedDate}
+                    aria-hidden='true'
+                    // style={{ display: "none" }}
+                    // className="hidden"
+                    {...register("date")}
+                  /> */}
+
+                  <DatePicker
+                    selected={selectedDate}
+                    minDate={new Date()}
                     dateFormat="dd/MM/yyyy"
-                    // onChange={(newDate) => setMessage(...message, newDate)}
-                    onChange={(newDate) => setSelectedDate(newDate)}
-                    startDate={minDate}
+                    placeholderText="Please Select a Date"
                     required
-                    // className="block w-full rounded-md border-0 py-3 pl-12 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-wonky text-base sm:leading-6 font-light"
+                    // onChange={handleChange}
+                    onChange={(newDate) => setSelectedDate(newDate)}
                     className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.date
                       ? "border-red-600 focus:border-red-600 ring-red-100 "
                       : "border-gray-300 focus:border-wonky ring-wonky "
                       }`}
-                  // {...register("date", {
-                  //   required: "Please select a date",
-                  // })}
-                  // ref={}
-                  /> */}
+                  />
 
                   <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none cursor-pointer">
                     <svg
@@ -433,9 +431,9 @@ const Book = () => {
                     </svg>
                   </div>
                 </div>
-                {errors.message && (
+                {errors.date && (
                   <div className="mt-1 text-wonky">
-                    <small>{errors.name.message}</small>
+                    <small>{errors.date.message}</small>
                   </div>
                 )}
               </div>
@@ -502,7 +500,7 @@ const Book = () => {
                 )}
               </div>
 
-              <button className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
+              <button type="submit" className="sm:col-span-2 sm:col-start-3 bg-wonky rounded-md py-4 text-center font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark">
                 {isSubmitting ? (
                   <svg
                     className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
@@ -525,14 +523,15 @@ const Book = () => {
                   "Submit Booking"
                 )}
               </button>
+
             </form>
             {isSubmitSuccessful && isSuccess && (
-              <div className="mt-3 text-sm text-center text-green-500">
+              <div className="mt-3 text-sm text-center text-green-300">
                 {message || "Success. Message sent successfully"}
               </div>
             )}
             {isSubmitSuccessful && !isSuccess && (
-              <div className="mt-3 text-sm text-center text-red-500">
+              <div className="mt-3 text-sm text-center text-red-300">
                 {message || "Something went wrong. Please try later."}
               </div>
             )}

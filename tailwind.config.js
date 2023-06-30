@@ -6,6 +6,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
@@ -16,15 +23,23 @@ module.exports = {
         bg: "#4D545D",
         dark: "#292929",
         darkbg: "#3A414B",
-        // white: "#d7d7d7",
+        white: "#d7d7d7",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: 0 },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: 0 },
+        },
       },
       animation: {
-        scroll: "scroll infinite linear",
-      },
-      backgroundImage: {
-        banner: 'url("../public/Images/Banner-bg.png")',
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [],
-};
+  plugins: [require("tailwindcss-animate")],
+}
