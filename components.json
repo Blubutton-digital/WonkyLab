@@ -4,7 +4,7 @@
   "rsc": true,
   "tailwind": {
     "config": "tailwind.config.js",
-    "css": "app/global.css",
+    "css": "styles/global.css",
     "baseColor": "slate",
     "cssVariables": false
   },

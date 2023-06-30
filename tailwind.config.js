@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -16,6 +14,17 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        playfair: ["Playfair Display", "serif"],
+      },
+      colors: {
+        wonky: "#FFA928",
+        bg: "#4D545D",
+        dark: "#292929",
+        darkbg: "#3A414B",
+        white: "#d7d7d7",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
