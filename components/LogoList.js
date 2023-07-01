@@ -20,7 +20,7 @@ const LogoList = () => {
               alt="Abbeydale brewery company logo"
               src={Abbeydale}
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -30,7 +30,7 @@ const LogoList = () => {
               src={Critters}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -39,7 +39,7 @@ const LogoList = () => {
               src={Graft}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -48,7 +48,7 @@ const LogoList = () => {
               src={Grizzy}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -57,7 +57,7 @@ const LogoList = () => {
               src={Neepsend}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -69,7 +69,7 @@ const LogoList = () => {
               src={Abbeydale}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -79,7 +79,7 @@ const LogoList = () => {
               src={Critters}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -88,7 +88,7 @@ const LogoList = () => {
               src={Graft}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -97,7 +97,7 @@ const LogoList = () => {
               src={Grizzy}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
@@ -106,7 +106,7 @@ const LogoList = () => {
               src={Neepsend}
               // 
               // className="svg"
-              className="h-full object-contain  w-[150px]"
+              className="mr-20 max-w-[100px] md:max-w-[150px]"
 
               priority
             />
