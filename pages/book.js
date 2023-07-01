@@ -62,7 +62,6 @@ const Book = () => {
       ...data,
       date: selectedDate ? selectedDate.toLocaleDateString("en-GB") : "",
     };
-    console.log(formData)
     onSubmit(formData);
   };
 
