@@ -141,7 +141,7 @@ const NavBar = () => {
         </nav>
         {/* Mobile Nav */}
         <nav className="flex lg:hidden max-h-20 ">
-          <div className="container mx-auto flex flex-row items-center lg:justify-between relative ">
+          <div className=" mx-auto flex flex-row items-center lg:justify-between relative ">
             <div
               className={
                 open
@@ -279,7 +279,7 @@ const NavBar = () => {
                 className={
                   open
                     ? // ? "lg:hidden absolute block right-0 bottom-1/2 translate-y-1/2 space-y-2 cursor-pointer"
-                    "lg:hidden absolute block right-10 bottom-1/2 space-y-2 cursor-pointer"
+                    "lg:hidden absolute block right-0 bottom-1/2 space-y-2 cursor-pointer"
                     : "hidden"
                 }
                 onClick={() => setOpen(!open)}
