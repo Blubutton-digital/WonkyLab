@@ -11,7 +11,7 @@ import H3 from "@/components/H3";
 import Cheers from "../public/Images/booking/cheers.png";
 import Table from "../public/Images/booking/table.png";
 import Stool from "../public/Images/booking/stool.png";
-import Pour from "../public/Images/booking/pouring.png";
+import Bottles from "../public/Images/booking/bottles.jpg";
 import Drinks from "../public/Images/booking/drinks.png";
 import Footer from "@/components/Footer";
 
@@ -89,7 +89,7 @@ const Book = () => {
                 className="object-cover h-full w-full rounded-md"
               /> */}
 							<Image
-								src={Cheers}
+								src={Bottles}
 								alt="Photo of shop front"
 								className="h-full w-full object-cover rounded-md"
 								priority
@@ -146,7 +146,7 @@ const Book = () => {
                 className="md:block hidden object-cover  h-full w-full rounded-md"
               /> */}
 							<Image
-								src={Pour}
+								src={Bottles}
 								alt="Photo of shop front"
 								className="h-full w-full object-cover md:block hidden  object-top rounded-md"
 								priority
