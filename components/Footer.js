@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<>
-			<div className="container mx-auto flex flex-col items-center pb-2 px-4 md:pb-0 sm:hidden">
+		<div className="w-full bg-wonky_green h-full">
+			<div className="container mx-auto flex flex-col items-center pb-2 px-4 md:pb-0 sm:hidden border-t-white/10 border-t-2 pt-4">
 				<div className="flex flex-row justify-between items-center w-full">
 					<div className="">
 						<Image
@@ -58,7 +58,7 @@ const Footer = () => {
 					</p>
 				</div>
 			</div>
-			<div className="container mx-auto hidden sm:flex flex-row justify-between items-center pb-8 md:pb-0">
+			<div className="container mx-auto hidden sm:flex flex-row justify-between items-center pb-8 md:pb-0 border-t-2 border-white/10 pt-4 ">
 				<div className="flex flex-col flex-1 mt-4 sm:mt-10 order-3 sm:order-1">
 					<p className="text-sm font-lato text-white">
 						All rights reserved. The Wonky Labrador
@@ -113,7 +113,7 @@ const Footer = () => {
 					</Link>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
