@@ -49,14 +49,14 @@ const NavBar = () => {
 						What we offer
 					</Link>
 				</nav>
-
-				<Image
-					src={WonkyLogo}
-					alt="Logo for Wonky Lab"
-					// height={145}
-					// width={130}
-					className="mt-[10px] bg-wonky_green rounded-md px-2 object-cover hidden lg:block"
-				/>
+				<Link href={"/"} className="relative hidden lg:block h-auto w-auto">
+					<Image
+						src={WonkyLogo}
+						alt="Logo for Wonky Lab"
+						width={320}
+						className="mt-[10px] bg-wonky_green rounded-md px-2 object-cover"
+					/>
+				</Link>
 				<Link href={"/"} className="relative block lg:hidden">
 					<Image
 						src={WonkyLogo}
