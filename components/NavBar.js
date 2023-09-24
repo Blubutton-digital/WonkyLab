@@ -53,8 +53,8 @@ const NavBar = () => {
 				<Image
 					src={WonkyLogo}
 					alt="Logo for Wonky Lab"
-					height={145}
-					width={145}
+					// height={145}
+					// width={130}
 					className="mt-[10px] bg-wonky_green rounded-md px-2 object-cover hidden lg:block"
 				/>
 				<Link href={"/"} className="relative block lg:hidden">
@@ -64,7 +64,7 @@ const NavBar = () => {
 						className=" bg-wonky_green rounded-md px-2  h-20 w-auto"
 					/>
 				</Link>
-				<nav className="lg:flex w-full justify-between items-center pl-16 lg:max-h-24 max-h-20 hidden text-white">
+				<nav className="lg:flex w-full justify-between items-center pl-16 lg:max-h-24 max-h-20 hidden text-white relative">
 					<Link
 						className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
 						href="/events"
@@ -109,7 +109,7 @@ const NavBar = () => {
 							</Link>
 						)}
 					</div>
-					<div className=" flex flex-row gap-x-4 absolute -translate-y-full right-4 mb-4">
+					<div className=" flex flex-row gap-x-4 absolute -translate-y-full right-0 mb-4">
 						<Link href={"https://www.facebook.com"} target="_blank">
 							<svg
 								width="20"
