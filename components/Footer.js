@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../public/Logo.png";
 import WonkyLogo from "@/public/Images/Logos/WonkyLogo.png";
 import Link from "next/link";
 
