@@ -13,6 +13,8 @@ import Table from "../public/Images/booking/table.png";
 import Stool from "../public/Images/booking/stool.png";
 import Bottles from "../public/Images/booking/bottles.jpg";
 import Drinks from "../public/Images/booking/drinks.png";
+import Test1 from "../public/Images/booking/test1.jpg";
+import Test2 from "../public/Images/booking/test2.jpg";
 import Footer from "@/components/Footer";
 
 const Book = () => {
@@ -89,7 +91,7 @@ const Book = () => {
                 className="object-cover h-full w-full rounded-md"
               /> */}
 							<Image
-								src={Bottles}
+								src={Test1}
 								alt="Photo of shop front"
 								className="h-full w-full object-cover rounded-md"
 								priority
@@ -132,7 +134,7 @@ const Book = () => {
                 className="object-cover md:block hidden  h-full w-full rounded-md"
               /> */}
 							<Image
-								src={Drinks}
+								src={Test2}
 								alt="Photo of shop front"
 								className="h-full w-full object-cover md:block hidden  object-top rounded-md"
 								priority
@@ -232,11 +234,10 @@ const Book = () => {
 										type="text"
 										name="name"
 										autoComplete="false"
-										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${
-											errors.name
-												? "border-red-600 focus:border-red-600 ring-red-100 "
-												: "border-gray-300 focus:border-wonky ring-wonky "
-										}`}
+										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.name
+											? "border-red-600 focus:border-red-600 ring-red-100 "
+											: "border-gray-300 focus:border-wonky ring-wonky "
+											}`}
 										placeholder="John Smith"
 										{...register("name", {
 											required: "Name is required",
@@ -288,11 +289,10 @@ const Book = () => {
 									<input
 										type="email"
 										name="email"
-										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${
-											errors.email
-												? "border-red-600 focus:border-red-600 ring-red-100 "
-												: "border-gray-300 focus:border-wonky ring-wonky "
-										}`}
+										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.email
+											? "border-red-600 focus:border-red-600 ring-red-100 "
+											: "border-gray-300 focus:border-wonky ring-wonky "
+											}`}
 										placeholder="info@yourmail.com"
 										{...register("email", {
 											required: "Enter your email",
@@ -342,11 +342,10 @@ const Book = () => {
 										type="tel"
 										name="number"
 										placeholder="+44"
-										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${
-											errors.number
-												? "border-red-600 focus:border-red-600 ring-red-100 "
-												: "border-gray-300 focus:border-wonky ring-wonky "
-										}`}
+										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.number
+											? "border-red-600 focus:border-red-600 ring-red-100 "
+											: "border-gray-300 focus:border-wonky ring-wonky "
+											}`}
 										{...register("number", {
 											required: "Enter your number",
 											pattern: {
@@ -409,11 +408,10 @@ const Book = () => {
 										required
 										// onChange={handleChange}
 										onChange={(newDate) => setSelectedDate(newDate)}
-										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${
-											errors.date
-												? "border-red-600 focus:border-red-600 ring-red-100 "
-												: "border-gray-300 focus:border-wonky ring-wonky "
-										}`}
+										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.date
+											? "border-red-600 focus:border-red-600 ring-red-100 "
+											: "border-gray-300 focus:border-wonky ring-wonky "
+											}`}
 									/>
 
 									<div className="absolute inset-y-0 right-4 flex items-center pointer-events-none cursor-pointer">
@@ -487,11 +485,10 @@ const Book = () => {
 										rows={3}
 										defaultValue={""}
 										placeholder=" Let us know what the event is for, how many people will attend etc"
-										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${
-											errors.message
-												? "border-red-600 focus:border-red-600 ring-red-100 "
-												: "border-gray-300 focus:border-wonky ring-wonky "
-										}`}
+										className={`block w-full rounded-md border-2 py-3 pl-12 pr-20 focus:ring-2 text-gray-900 placeholder:text-gray-400  text-base sm:leading-6 font-light ${errors.message
+											? "border-red-600 focus:border-red-600 ring-red-100 "
+											: "border-gray-300 focus:border-wonky ring-wonky "
+											}`}
 										{...register("message", {
 											required: "A message is required",
 										})}

@@ -3,6 +3,7 @@ import H3 from "./H3";
 import Image from "next/image";
 
 import Shopfront from "../public/Images/shopFront.png";
+import Shopfront2 from "../public/Images/Home/frontOfBar2.jpg";
 
 const Info = ({ reverse }) => {
   return (
@@ -31,7 +32,7 @@ const Info = ({ reverse }) => {
           className="rounded-lg object-cover"
         /> */}
         <Image
-          src={Shopfront}
+          src={Shopfront2}
           alt="Photo of shop front"
           className="h-full w-full object-cover object-top rounded-md"
           fill

@@ -6,6 +6,9 @@ import React from "react";
 import Image from "next/image";
 
 import Macca from "../public/Images/Macca-shopfront.png";
+import Macca1 from "../public/Images/Home/macca1.jpg";
+import Macca2 from "../public/Images/Home/macca2.jpg";
+import Shop1 from "../public/Images/Home/shopOpen.jpg";
 import Shop from "../public/Images/open-sign.png";
 import Link from "next/link";
 import LogoList from "@/components/LogoList";
@@ -21,7 +24,7 @@ const _about = () => {
 				<section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 md:pb-24 pb-14 gap-x-20">
 					<div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 order-2 lg:order-1">
 						<Image
-							src={Macca}
+							src={Macca2}
 							alt="Photo of shop front"
 							className="h-full w-full object-cover lg:object-top rounded-md object-center"
 							fill
@@ -78,7 +81,7 @@ const _about = () => {
 						</div>
 						<div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
 							<Image
-								src={Shop}
+								src={Shop1}
 								alt="Photo of shop front"
 								className="h-full w-full object-cover object-top rounded-md"
 								placeholder="blur"

@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import HeroBg from "../public/Images/HeroBG.png";
+import HeroBg2 from "../public/Images/Home/fullViewBar.jpg"
 
 const Hero = () => {
   return (
     <div className="w-screen h-screen bg-black/40 relative">
       <Image
-        src={HeroBg}
+        src={HeroBg2}
         alt="Background image of the bar"
         fill
         className="object-cover -z-10"
