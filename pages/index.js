@@ -15,8 +15,7 @@ export default function Home() {
         <title>Wonky Lab</title>
         <meta
           name="description"
-          content="Discover our welcoming atosphere. Looking for a place to relax and enjoy a cold craft beer? Our bar is
-          			the perfect spot for you! We offer a cosy atmosphere and a unique drinking experience that will leave you coming back for more."
+          content="Looking for a place to relax and enjoy a cold craft beer? Our bar is the perfect spot for you! We offer a cosy atmosphere and a unique drinking experience that will leave you coming back for more."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
