@@ -1,20 +1,36 @@
 import React from "react";
+import { getDayOfWeek, getOrdinal } from "@/lib/utils";
+const Event = ({ eventData, month }) => {
+  const {
+    date,
+    title,
+    subHeading,
+    description,
+    startTime,
+    eventBrite,
+    fullDate,
+  } = eventData;
 
-const Event = () => {
+  const ordinal = getOrdinal(date);
+  const dayOfWeek = getDayOfWeek(fullDate);
+
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-x-24 mt-20 lg:items-center text-white font-light tracking-wide p-6 rounded-md bg-white/10 lg:gap-y-0 gap-y-5 ">
+    <div
+      id={`${month}-${date}`}
+      className="w-full flex flex-col lg:flex-row gap-x-24 mt-10 lg:items-center text-white font-light tracking-wide p-6 rounded-md bg-white/10 lg:gap-y-0 gap-y-5 scroll-m-32 "
+    >
       <div className="flex lg:flex-col lg:items-center items-end lg:gap-x-0 gap-x-2 ">
-        <p className="font-playfair text-2xl">Saturday</p>
-        <p className="font-playfair lg:text-7xl flex flex-row lg:mt-4 text-4xl">
-          22 <span className="lg:text-2xl text-lg">nd</span>
+        <p className="font-lato text-lg">{dayOfWeek}</p>
+        <p className="font-playfair lg:text-4xl flex flex-row lg:mt-4 text-2xl">
+          {date} <span className="lg:text-2xl text-lg">{ordinal}</span>
         </p>
       </div>
       <div className="flex-1 flex flex-col gap-y-8 w-full">
-        <div className="flex flex-col xl:flex-row xl:items-center space-y-4 xl:space-y-0 justify-between">
-          <h4 className="text-3xl md:text-4xl font-playfair">
-            Mental Health Safe Space
+        <div className="flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 justify-between">
+          <h4 className="text-2xl md:text-2xl font-playfair">
+            {title} - <span>{subHeading}</span>
           </h4>
-          <p className="inline-flex text-2xl font-playfair items-center gap-x-2">
+          <p className="inline-flex md:text-xl items-center gap-x-2 font-lato">
             <svg
               width="24"
               height="25"
@@ -38,39 +54,13 @@ const Event = () => {
                 stroke-linejoin="round"
               />
             </svg>
-            19:00
+            {startTime}
           </p>
         </div>
         <div className="">
-          <p className="text-lg leading-relaxed">
-            Here at The Wonkey Labrador, mental health is important to us. We
-            hold monthly evenings where you can come and enjoy a safe space to
-            chat, relax and have a drink in a supportive atmosphere. We also
-            have guest speakers come in to talk about important topics and share
-            their experiences and knowledge
-          </p>
+          <p className="text-lg leading-relaxed font-lato">{description}</p>
         </div>
       </div>
-      {/* <div className="">
-        <button className="w-full bg-wonky rounded-md py-4 px-10 font-lato font-light text-base tracking-wide hover:bg-[#E48E0D] text-dark flex flex-row items-center gap-x-4">
-          Find out more
-          <svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20 12.5L13 19.5L6 12.5"
-              stroke="#111827"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-      </div> */}
     </div>
   );
 };

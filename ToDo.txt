@@ -1,4 +1,14 @@
-[] - Fix logo carousel
-    - Add transparent gradient to ends of carousel
-[] - finishing styling beer carousel 
-[] - make sure images sttay within aspect ratio
+[] - Change Logo 
+[] - Need to sort out SEO
+[] - Reword What we offer section.
+[] - stamp needs to be inside more
+[x] - add Logos for Breweries
+[x] - Brewery list
+[x] - add function to homepage so next event is displaying and when click find out more it will  link to it. Maybe add ID.
+[x] - find article to link on about page
+        https://www.exposedmagazine.co.uk/news/refurbed-sheffield-micro-bar-hopes-to-lead-the-way-for-mental-health/
+[x] - some pages don't have a title
+[x] - fix Hero text
+[x] - Fix text hierarchy on Events component.
+[x] - figure out the day of the week
+[x] - add mental health monday to events

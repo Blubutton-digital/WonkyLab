@@ -4,31 +4,12 @@ import Card from "./Card";
 import Carousel from "./Carousel";
 import { Beers } from "../data/beers";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useSwiper } from "swiper/react";
+import LogoCard from "./LogoCard";
+import { featuredBreweries } from "@/data/events";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "swiper/css/scrollbar";
-
-// import required modules
-import { Pagination, Navigation } from "swiper";
-import IconArrowLeft from "./IconArrowLeft";
-import IconArrowRight from "./IconArrowRight";
 import Stamp from "./Stamp";
 
 const Offer = () => {
-  //   const swiper = new Swiper(".swiper", {
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev",
-  //     },
-  //   });
-
-  const swiper = useSwiper();
-
   return (
     <section className="bg-[#EBEBEB] md:pb-12 scroll-mt-12" id="offers">
       <div className="container mx-auto md:pt-28 pt-14 text-center md:mb-24 mb-14">
@@ -41,81 +22,18 @@ const Offer = () => {
       </div>
       <div className="relative mx-auto">
         <Stamp className="absolute top-0 left-0 lg:-translate-y-3/4 lg:-translate-x-10 -translate-x-10 -translate-y-[70%] xl:opacity-40 opacity-20 scale-75 lg:scale-100  sm:block" />
-        {/* <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          pagination={{
-            type: "progressbar",
-          }}
-          modules={[Pagination]}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 50,
-            },
-            1280: {
-              slidesPerView: 4,
-              spaceBetween: 50,
-            },
-          }}
-          className="mySwiper relaive mt-12"
-        >
-          <div className="flex flex-row justify-between">
-            <IconArrowLeft />
-            <IconArrowRight />
-          </div>
-          {/* <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide> 
-
-          {Beers.map((item, key) => {
-            return (
-              <SwiperSlide key={key}>
-                <Card info={item} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper> 
-        */}
         <Carousel count={Beers.length}>
-          {Beers.map((item, key) => {
-            return <Card info={item} key={key} />;
+          {featuredBreweries.map((beer, index) => {
+            return <LogoCard beer={beer} key={index} />;
+            // return <Card info={item} key={key} />;
           })}
         </Carousel>
-      </div>
-      {/* <div className="container mx-auto overflow-hidden flex flex-row">
-        <div className="flex w-full  ">
-          {Beers.map((item, key) => {
-            return <Card key={key} info={item} />;
+        {/* <div className=" grid grid-cols-2 md:grid-cols-4 grid-rows-2  items-center justify-center gap-12  max-w-7xl mx-auto px-4 pb-20">
+          {featuredBreweries.map((beer, index) => {
+            return <LogoCard beer={beer} key={index} />;
           })}
-        </div>
-      </div> */}
-
-      {/* <div className="w-full flex flex-row container mx-auto">
-        <button onClick={() => previous()}>previous</button>
-        <div className="container mx-auto overflow-hidden flex flex-row">
-          <div className="flex w-full  ">
-            {Beers.map((item, key) => {
-              return <Card key={key} info={item} />;
-            })}
-          </div>
-        </div>
-        <button onClick={() => next()}>next</button>
-      </div> */}
+        </div> */}
+      </div>
     </section>
   );
 };

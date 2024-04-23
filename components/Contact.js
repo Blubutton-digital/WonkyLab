@@ -1,6 +1,7 @@
 import React from "react";
 import H3 from "./H3";
 import Map from "./Map";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -138,7 +139,13 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="">
-                  <p>contact@thecraftyone.uk</p>
+                  <Link
+                    className="hover:underline"
+                    href="mailto:wonkylabrador@gmail.com"
+                  >
+                    {" "}
+                    wonkylabrador@gmail.com
+                  </Link>
                 </div>
               </div>
             </div>

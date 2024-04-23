@@ -21,44 +21,39 @@ const LogoList = () => {
               src={Abbeydale}
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
 
             <Image
               alt="Abbeydale brewery company logo"
               src={Critters}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Graft}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Grizzy}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Neepsend}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
           </div>
@@ -67,57 +62,50 @@ const LogoList = () => {
             <Image
               alt="Abbeydale brewery company logo"
               src={Abbeydale}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
 
             <Image
               alt="Abbeydale brewery company logo"
               src={Critters}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Graft}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Grizzy}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
             <Image
               alt="Abbeydale brewery company logo"
               src={Neepsend}
-              // 
+              //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
-
               priority
             />
           </div>
         </div>
 
-
         {/* </article > */}
-
       </div>
-    </div >
+    </div>
   );
 };
 

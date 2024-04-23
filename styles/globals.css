@@ -76,8 +76,6 @@
   --duration: 60s;
   --scroll-start: 0;
   --scroll-end: calc(-100% - var(--gap));
-
-
 }
 
 .marquee {
@@ -85,11 +83,13 @@
   overflow: hidden;
   user-select: none;
   gap: var(--gap);
-  mask-image: linear-gradient(var(--mask-direction, to right),
-      hsl(0 0% 0% / 0),
-      hsl(0 0% 0% / 1) 20%,
-      hsl(0 0% 0% / 1) 80%,
-      hsl(0 0% 0% / 0));
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
 }
 
 .marquee__group {
@@ -109,7 +109,6 @@
   }
 }
 
-
 @keyframes scroll-x {
   from {
     transform: translateX(var(--scroll-start));
@@ -119,7 +118,6 @@
     transform: translateX(var(--scroll-end));
   }
 }
-
 
 .svg {
   /* width: calc(var(--size) / 1.5); */
@@ -136,4 +134,16 @@
 .carousel::-webkit-scrollbar,
 .looper__listInstance::-webkit-scrollbar {
   display: none;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
