@@ -4,7 +4,7 @@ import React from "react";
 import Abbeydale from "../public/Images/Logos/Abbeydale.png";
 import Critters from "../public/Images/Logos/Critters.png";
 import Graft from "../public/Images/Logos/Graft.png";
-import Grizzy from "../public/Images/Logos/Grizzy.png";
+import Torrside from "../public/Images/Logos/Torrside.png";
 import Neepsend from "../public/Images/Logos/Neepsend.png";
 
 const LogoList = () => {
@@ -42,7 +42,7 @@ const LogoList = () => {
             />
             <Image
               alt="Abbeydale brewery company logo"
-              src={Grizzy}
+              src={Torrside}
               //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"
@@ -86,7 +86,7 @@ const LogoList = () => {
             />
             <Image
               alt="Abbeydale brewery company logo"
-              src={Grizzy}
+              src={Torrside}
               //
               // className="svg"
               className="mr-20 max-w-[100px] md:max-w-[150px]"

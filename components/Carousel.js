@@ -22,7 +22,7 @@ const Carousel = ({ children, count }) => {
     });
   };
   return (
-    <div className="w-full container relative mx-auto">
+    <div className="w-full relative mx-auto">
       {/* Container for cards */}
       {/* <div className="flex flex-row overflow-scroll flex-wrap"> */}
       <div className="flex flex-row">

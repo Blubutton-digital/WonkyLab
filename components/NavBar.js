@@ -61,7 +61,7 @@ const NavBar = () => {
           <Image
             src={WonkyLogo}
             alt="Logo for Wonky Lab"
-            className=" bg-wonky_green rounded-md px-2  h-20 w-auto"
+            className=" bg-wonky_green rounded-md px-2 py-2  h-20 w-auto"
           />
         </Link>
         <nav className="lg:flex w-full justify-between items-center pl-16 lg:max-h-24 max-h-20 hidden text-white relative">

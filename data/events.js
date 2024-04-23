@@ -2,8 +2,8 @@ export const EventList = {
   May: [
     {
       date: "22",
-      title: "Tap Takeover",
-      subHeading: "White & Sparkling",
+      subHeading: "Tap Takeover",
+      title: "White & Sparkling",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -12,8 +12,8 @@ export const EventList = {
     },
     {
       date: "23",
-      title: "Tap Takeover",
-      subHeading: "Neon Raptor (Nottingham)",
+      subHeading: "Tap Takeover",
+      title: "Neon Raptor (Nottingham)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -24,8 +24,8 @@ export const EventList = {
   June: [
     {
       date: "3",
-      title: "Mental Health Monday",
-      subHeading: " With Angel Takoree",
+      subHeading: "Mental Health Monday",
+      title: " With Angel Takoree",
       description:
         "Wonky Labrador invites you to unwind with Lego Mindful Play. De-stress, get creative, and enjoy a free soft or non-alcoholic drink on us. Bring your friends or meet new ones in a relaxed, supportive atmosphere. See you there!",
       startTime: "19:00",
@@ -34,8 +34,8 @@ export const EventList = {
     },
     {
       date: "13",
-      title: "Tap Takeover",
-      subHeading: "Tartarus (Leeds)",
+      subHeading: "Tap Takeover",
+      title: "Tartarus (Leeds)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -46,8 +46,8 @@ export const EventList = {
   August: [
     {
       date: "1",
-      title: "Tap Takeover",
-      subHeading: "Loud Shirt Brewing (Brighton)",
+      subHeading: "Tap Takeover",
+      title: "Loud Shirt Brewing (Brighton)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -56,8 +56,8 @@ export const EventList = {
     },
     {
       date: "22",
-      title: "Tap Takeover",
-      subHeading: "Left Handed Giant (Bristol)",
+      subHeading: "Tap Takeover",
+      title: "Left Handed Giant (Bristol)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -68,8 +68,8 @@ export const EventList = {
   September: [
     {
       date: "12",
-      title: "Tap Takeover",
-      subHeading: "Brass Castle (Malton)",
+      subHeading: "Tap Takeover",
+      title: "Brass Castle (Malton)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -78,8 +78,8 @@ export const EventList = {
     },
     {
       date: "19",
-      title: "Tap Takeover",
-      subHeading: "Brass Castle (Malton)",
+      subHeading: "Tap Takeover",
+      title: "Brass Castle (Malton)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -90,8 +90,8 @@ export const EventList = {
   October: [
     {
       date: "24",
-      title: "Tap Takeover",
-      subHeading: "Sureshot (Manchester)",
+      subHeading: "Tap Takeover",
+      title: "Sureshot (Manchester)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
@@ -99,23 +99,23 @@ export const EventList = {
       fullDate: "24/10/2024",
     },
   ],
-  November: [
-    {
-      date: "TBC",
-      title: "Tap Takeover",
-      subHeading: "To Be Confirmed",
-      description:
-        "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
-      startTime: "",
-      eventBrite: "",
-      fullDate: "TBC",
-    },
-  ],
+  // November: [
+  //   {
+  //     date: "TBC",
+  //     subHeading: "Tap Takeover",
+  //     title: "To Be Confirmed",
+  //     description:
+  //       "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
+  //     startTime: "",
+  //     eventBrite: "",
+  //     fullDate: "TBC",
+  //   },
+  // ],
   December: [
     {
       date: "12",
-      title: "Tap Takeover",
-      subHeading: "Polly's (Mold, N Wales)",
+      subHeading: "Tap Takeover",
+      title: "Polly's (Mold, N Wales)",
       description:
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
