@@ -66,16 +66,6 @@ export const EventList = {
   ],
   September: [
     {
-      date: "12",
-      subHeading: "Tap Takeover",
-      title: "Brass Castle (Malton)",
-      description:
-        "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
-      startTime: "19:00",
-      eventBrite: "url",
-      fullDate: "12/09/2024",
-    },
-    {
       date: "19",
       subHeading: "Tap Takeover",
       title: "Brass Castle (Malton)",
@@ -83,7 +73,7 @@ export const EventList = {
         "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
       startTime: "19:00",
       eventBrite: "url",
-      fullDate: "19/09/2024",
+      fullDate: "12/09/2024",
     },
   ],
   October: [
