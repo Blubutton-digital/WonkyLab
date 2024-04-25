@@ -17,6 +17,7 @@ import Test1 from "../public/Images/booking/test1.jpg";
 import Test2 from "../public/Images/booking/test2.jpg";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import AgeVerification from "@/components/ageVerification/ageVerification";
 
 const Book = () => {
   const date = new Date();
@@ -74,7 +75,7 @@ const Book = () => {
   // }
 
   return (
-    <div>
+    <AgeVerification>
       <Head>
         <title>Booking - Wonky Labrador</title>
         <meta
@@ -562,7 +563,7 @@ const Book = () => {
       <footer>
         <Footer />
       </footer>
-    </div>
+    </AgeVerification>
   );
 };
 

@@ -7,10 +7,11 @@ import React from "react";
 import { EventList } from "@/data/events";
 import { isDateInThePast, isMonthInThePast } from "@/lib/utils";
 import Head from "next/head";
+import AgeVerification from "@/components/ageVerification/ageVerification";
 
 const events = () => {
   return (
-    <div>
+    <AgeVerification>
       <Head>
         <title>Events - Wonky Lab</title>
         <meta
@@ -86,7 +87,7 @@ const events = () => {
         </section>
       </main>
       <Footer />
-    </div>
+    </AgeVerification>
   );
 };
 

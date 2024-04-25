@@ -7,10 +7,11 @@ import Offer from "@/components/Offer";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import AgeVerification from "@/components/ageVerification/ageVerification";
 
 export default function Home() {
   return (
-    <>
+    <AgeVerification>
       <Head>
         <title>Wonky Lab</title>
         <meta
@@ -25,6 +26,7 @@ export default function Home() {
         <Hero />
       </header>
       <main className="bg-wonky_green">
+        {/* <AgeModal /> */}
         <InfoBar />
         <Info />
         <Offer />
@@ -34,6 +36,6 @@ export default function Home() {
       <footer className="bg-wonky_green">
         <Footer />
       </footer>
-    </>
+    </AgeVerification>
   );
 }
