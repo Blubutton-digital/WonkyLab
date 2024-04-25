@@ -70,7 +70,7 @@ const AgeModal = ({ onConfirm, onReject }) => {
                   <div className="mt-8 flex flex-row justify-between gap-3">
                     <button
                       type="button"
-                      className="w-full inline-flex justify-center rounded-md border border-transparent bg-wonky text-wonky_green px-4 py-2 text-sm font-medium  hover:bg-wonky/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="w-full inline-flex justify-center items-center rounded-md border border-transparent bg-wonky text-wonky_green px-4 py-2 text-sm font-medium  hover:bg-wonky/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={() => {
                         onConfirm();
                         closeModal();
@@ -80,7 +80,7 @@ const AgeModal = ({ onConfirm, onReject }) => {
                     </button>
                     <button
                       type="button"
-                      className=" w-full inline-flex justify-center rounded-md border border-transparent  px-4 py-2 text-sm font-medium text-gray-100 hover:text-gray-900 border-wonky  hover:bg-wonky focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className=" w-full inline-flex items-center justify-center rounded-md border border-transparent  px-4 py-2 text-sm font-medium text-gray-100 hover:text-gray-900 border-wonky  hover:bg-wonky focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={onReject}
                     >
                       No, I am under 18
