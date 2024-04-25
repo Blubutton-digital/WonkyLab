@@ -20,7 +20,8 @@ module.exports = {
       },
       colors: {
         wonky: "#FFA928",
-        wonky_green: "#31665C",
+        // wonky_green: "#31665C",
+        wonky_green: "rgb(13,66,57)",
         bg: "#4D545D",
         dark: "#292929",
         darkbg: "#3A414B",

@@ -44,7 +44,7 @@ const _about = () => {
           <div className="lg:w-6/12 w-full h-full relative flex flex-col  my-auto order-1 lg:order-2">
             <H3 black>Our Story</H3>
             <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
-              The new face of The Wonky Labrador is James “Mac” McGrath.
+              The familiar face of The Wonky Labrador is James “Mac” McGrath.
               Village-boy from South Lincolnshire, Mac has fallen in love with
               Sheffield & the Peak District. As a craft beer fanatic, and with
               20 years experience in hospitality, opening a bar here was pretty
@@ -88,7 +88,7 @@ const _about = () => {
                 </p>
               </>
               <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
-                Interested in being part of The Crafty One crew?
+                Interested in being part of The Wonky Labrador crew?
               </p>
               <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 Email:{" "}

@@ -7,7 +7,7 @@ const Carousel = ({ children, count }) => {
   const scrollToRight = (e) => {
     e.preventDefault();
     carouselRef.current.scrollBy({
-      left: carouselRef.current.clientWidth / count + 10,
+      left: carouselRef.current.clientWidth / count + count * 10,
       top: 0,
       behavior: "smooth",
     });

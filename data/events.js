@@ -2,10 +2,9 @@ export const EventList = {
   May: [
     {
       date: "22",
-      subHeading: "Tap Takeover",
+      subHeading: "Wine Tasting",
       title: "White & Sparkling",
-      description:
-        "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
+      description: "Description for the wine tasting event.",
       startTime: "19:00",
       eventBrite: "url",
       fullDate: "22/05/2024", // Full date in the expected format
@@ -131,6 +130,7 @@ import Smod from "../public/Images/Logos/Smod.png";
 import Torrside from "../public/Images/Logos/Torrside.png";
 import Triple from "../public/Images/Logos/Triple.png";
 import Neepsend from "../public/Images/Logos/Neepsend.png";
+import Pentrich from "../public/Images/Logos/Pentrich.png";
 
 export const featuredBreweries = [
   {
@@ -158,15 +158,21 @@ export const featuredBreweries = [
     website: "https://beerofsmod.co.uk/",
   },
   {
-    name: "Perith",
+    name: "Neepsend",
     logo: Neepsend,
     bg: "light",
-    website: "https://www.google.com",
+    website: "https://neepsendbrewco.com/",
   },
   {
     name: "Torrside",
     logo: Torrside,
     bg: "light",
     website: "https://www.torrside.co.uk/",
+  },
+  {
+    name: "Pentrich",
+    logo: Pentrich,
+    bg: "light",
+    website: "https://www.pentrichbrewing.com/",
   },
 ];

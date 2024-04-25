@@ -3,6 +3,8 @@ import H3 from "./H3";
 import Map from "./Map";
 import Link from "next/link";
 
+import { openingTimes } from "@/data/openingTimes";
+
 const Contact = () => {
   return (
     <section className="scroll-mt-14" id="contact">
@@ -35,7 +37,16 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-y-3">
-                  <div className="flex flex-row justify-between lg:gap-x-48 gap-x-32">
+                  {openingTimes.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-row justify-between first:lg:gap-x-48 first:gap-x-32"
+                    >
+                      <p>{item.day}</p>
+                      <p>{item.opening}</p>
+                    </div>
+                  ))}
+                  {/* <div className="flex flex-row justify-between lg:gap-x-48 gap-x-32">
                     <p>Monday</p>
                     <p>Closed</p>
                   </div>
@@ -62,7 +73,7 @@ const Contact = () => {
                   <div className="flex flex-row justify-between">
                     <p>Sunday</p>
                     <p>12:00 - 20:00</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -98,28 +109,7 @@ const Contact = () => {
                   <p>S11 7ED</p>
                 </div>
               </div>
-              <div className="flex flex-row  text-[#d7d7d7] text-lg font-light tracking-wide leading-relaxed">
-                <div className="mr-8">
-                  <svg
-                    width="27"
-                    height="26"
-                    viewBox="0 0 27 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.75537 3.61296C1.75537 2.16959 2.95987 0.999512 4.4457 0.999512H8.85682C9.43582 0.999512 9.94986 1.35942 10.133 1.89301L12.1478 7.76469C12.3595 8.38161 12.072 9.05586 11.4732 9.34668L8.43681 10.8215C9.91951 14.0161 12.5689 16.5897 15.8574 18.03L17.3756 15.0804C17.675 14.4988 18.3691 14.2195 19.0041 14.4251L25.0486 16.3823C25.5978 16.5602 25.9683 17.0596 25.9683 17.622V21.9071C25.9683 23.3504 24.7638 24.5205 23.278 24.5205H21.9328C10.7891 24.5205 1.75537 15.7449 1.75537 4.91968V3.61296Z"
-                      stroke="#D7D7D7"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div className="">
-                  <p>01142630670</p>
-                </div>
-              </div>
+
               <div className="flex flex-row  text-[#d7d7d7] text-lg font-light tracking-wide leading-relaxed">
                 <div className="mr-8">
                   <svg

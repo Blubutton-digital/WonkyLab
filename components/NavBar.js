@@ -28,6 +28,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-wonky_green lg:h-24 h-20 w-full fixed z-50">
+      {/* <div className="bg-wonky_green lg:h-24 h-20 w-full fixed z-50"> */}
       <div className="container mx-auto flex flex-row relative justify-between">
         <nav className="lg:flex w-full justify-between items-center pr-16 lg:max-h-24 max-h-20 hidden text-white">
           <Link

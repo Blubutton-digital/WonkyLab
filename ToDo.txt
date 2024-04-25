@@ -1,7 +1,27 @@
-[] - Change Logo 
 [] - Need to sort out SEO
-[] - Reword What we offer section.
-[] - stamp needs to be inside more
+[] - organise Images better and compress them
+[] -
+
+[x] - change header colour
+[x] - replace New with Familiar 
+[x] - change opening hours
+        Opening times are
+        monday - closed
+        Tues-Thu 3-10
+        Friday & Saturday12-11
+        Sunday 12-9.30
+[x] - remove phone number
+[x] - Wine Tasting in events for white and sparkling evening
+[x] - change "Join the crafty one crew to wonky lab crew"
+[x] - Add Neepsend to the list
+
+
+
+
+[x] - Reword What we offer section.
+[x] - remove Grizzly
+[x] - Change Logo 
+[x] - stamp needs to be inside more
 [x] - add Logos for Breweries
 [x] - Brewery list
 [x] - add function to homepage so next event is displaying and when click find out more it will  link to it. Maybe add ID.
