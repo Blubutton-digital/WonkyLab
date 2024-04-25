@@ -81,7 +81,7 @@ const _about = () => {
                   <Link
                     className="text-wonky hover: underline underline-offset-4 "
                     target="_blank"
-                    href=" https://www.exposedmagazine.co.uk/news/refurbed-sheffield-micro-bar-hopes-to-lead-the-way-for-mental-health/"
+                    href="https://www.exposedmagazine.co.uk/news/refurbed-sheffield-micro-bar-hopes-to-lead-the-way-for-mental-health"
                   >
                     this article from Exposed Magazine!
                   </Link>
