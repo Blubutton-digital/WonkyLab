@@ -1,3 +1,4 @@
+import Head from "next/head";
 import AgeModal from "./AgeModal";
 
 import { useState, useEffect } from "react";
@@ -21,7 +22,14 @@ const AgeVerification = ({ children }) => {
 
   // If age is not verified, show the modal
   if (!ageVerified) {
-    return <AgeModal onConfirm={handleConfirm} onReject={handleReject} />;
+    return (
+      <>
+        <Head>
+          <title>Age Verification - Wonky Labrador</title>
+        </Head>
+        <AgeModal onConfirm={handleConfirm} onReject={handleReject} />{" "}
+      </>
+    );
   }
 
   return children; // If age is verified, render the children (page content)

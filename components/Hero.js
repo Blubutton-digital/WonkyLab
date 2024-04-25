@@ -18,14 +18,9 @@ const Hero = () => {
       <div className="container mx-auto h-full z-50">
         <div className="flex items-center h-full px-4">
           <h2 className="font-semibold text-5xl md:text-7xl lg:text-8xl font-playfair leading-normal lg:leading-normal md:leading-normal text-white capitalize ">
-            Not just about{" "}
-            <span className="underline underline-offset-2 text-wonky">
-              beer
-            </span>
+            Not just about <span className="underline  text-wonky">Beer</span>
             , <br className="hidden md:block" /> About{" "}
-            <span className="underline underline-offset-2 text-wonky">
-              community
-            </span>
+            <span className="underline  text-wonky">Community</span>
           </h2>
         </div>
       </div>

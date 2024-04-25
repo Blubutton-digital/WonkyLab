@@ -22,7 +22,7 @@ const Offer = () => {
           awesome breweries we use below.
         </p>
       </div>
-      <div className="relative mx-auto container pb-20">
+      <div className="relative mx-auto sm:container pb-20">
         <Stamp className="absolute top-0 left-0 lg:-translate-y-3/4 lg:-translate-x-10 -translate-x-10 -translate-y-[70%] xl:opacity-40 opacity-20 scale-75 lg:scale-100  sm:block" />
         <Carousel count={featuredBreweries.length}>
           {featuredBreweries.map((beer, index) => {
