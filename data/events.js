@@ -166,3 +166,30 @@ export const featuredBreweries = [
     website: "https://www.pentrichbrewing.com/",
   },
 ];
+
+export const otherBreweries = [
+  {
+    name: "Tartarus Beers",
+    href: "https://www.tartarusbeers.co.uk/",
+  },
+  {
+    name: "Bini Brew",
+    href: "https://binibrew.co/",
+  },
+  {
+    name: "Loud Shirt Brewing",
+    href: "https://loudshirtbeer.co.uk/",
+  },
+  {
+    name: "Ideal Day Brewery",
+    href: "https://idealdaybrewery.com/",
+  },
+  {
+    name: "Zapato",
+    href: "https://zapatobrewing.com/",
+  },
+  {
+    name: "Northern Monk",
+    href: "https://www.northernmonk.com/",
+  },
+];

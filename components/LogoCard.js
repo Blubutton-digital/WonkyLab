@@ -24,10 +24,10 @@ const LogoCard = ({ beer }) => {
         <Link
           href={website}
           target="_blank"
-          className="inline-flex items-center gap-2 group hover:text-wonky_green text-xs "
+          className="inline-flex items-center gap-2 group hover:text-wonky text-xs "
         >
           Brewerys Website
-          <ArrowTopRightOnSquareIcon className="h-5 w-5 group group-hover:text-wonky_green" />
+          <ArrowTopRightOnSquareIcon className="h-4 w-4 group-hover:-translate-y-0.5 transition-transform" />
         </Link>
       </div>
     </div>

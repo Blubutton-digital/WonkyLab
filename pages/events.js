@@ -8,6 +8,8 @@ import { EventList } from "@/data/events";
 import { isDateInThePast, isMonthInThePast } from "@/lib/utils";
 import Head from "next/head";
 import AgeVerification from "@/components/ageVerification/ageVerification";
+import Link from "next/link";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const events = () => {
   return (
@@ -32,6 +34,20 @@ const events = () => {
               Here at The Wonkey Labrador, we hold a range of regular and
               featured events. Check out what is available below, you’re sure to
               find something you will enjoy!
+            </p>
+            <p className="text-white text-xl max-w-4xl mx-auto md:mt-10 mt-7 font-light tracking-wide leading-relaxed md:text-center text-left">
+              Fancy coming along to an event? Head to our{" "}
+              <Link
+                href={
+                  "https://www.eventbrite.com/o/the-wonky-labrador-74863017333"
+                }
+                className="hover:text-wonky decoration-2 underline underline-offset-2  inline-flex items-center gap-2 group"
+                target="_blank"
+              >
+                Eventbrite page{" "}
+                <ArrowTopRightOnSquareIcon className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>{" "}
+              to book your ticket.
             </p>
           </div>
           {Object.keys(EventList).map((month) => {

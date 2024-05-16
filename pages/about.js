@@ -14,6 +14,7 @@ import LogoList from "@/components/LogoList";
 import Banner from "@/components/Banner";
 import Head from "next/head";
 import AgeVerification from "@/components/ageVerification/ageVerification";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const _about = () => {
   return (
@@ -45,11 +46,13 @@ const _about = () => {
             <div className="lg:w-6/12 w-full h-full relative flex flex-col  my-auto order-1 lg:order-2">
               <H3 black>Our Story</H3>
               <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
-                The familiar face of The Wonky Labrador is James “Mac” McGrath.
-                Village-boy from South Lincolnshire, Mac has fallen in love with
-                Sheffield & the Peak District. As a craft beer fanatic, and with
-                20 years experience in hospitality, opening a bar here was
-                pretty much inevitable.
+                The familiar face of The Wonky Labrador is Mac McGrath, a
+                village boy of South Yorkshire stock. Mac has fallen in love
+                with Sheffield & the Peak District & as a craft beer fanatic
+                with 20 years experience in hospitality, opening a bar here was
+                pretty much inevitable. His experiences of travelling through
+                Europe & his stay in New Zealand has driven the service & style
+                found in The Wonky Labrador
               </p>
               <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 We welcome boardgamers, beer aficionados, weekend
@@ -58,7 +61,10 @@ const _about = () => {
               </p>
               <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 To see our current offerings{" "}
-                <Link href={"/#offers"} className="text-wonky">
+                <Link
+                  href={"/#offers"}
+                  className="hover:text-wonky decoration-2 underline"
+                >
                   click here.
                 </Link>
               </p>
@@ -80,11 +86,12 @@ const _about = () => {
                   <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                     If you want to find out more about us, check out{" "}
                     <Link
-                      className="text-wonky hover: underline underline-offset-4 "
+                      className="hover:text-wonky underline decoration-2 underline-offset-4 inline-flex items-center gap-2 group"
                       target="_blank"
                       href="https://www.exposedmagazine.co.uk/news/refurbed-sheffield-micro-bar-hopes-to-lead-the-way-for-mental-health"
                     >
                       this article from Exposed Magazine!
+                      <ArrowTopRightOnSquareIcon className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
                     </Link>
                   </p>
                 </>
@@ -94,10 +101,9 @@ const _about = () => {
                 <p className="text-white lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                   Email:{" "}
                   <Link
-                    className="text-wonky"
+                    className="text-wonky hover:underline"
                     href="mailto:wonkylabrador@gmail.com"
                   >
-                    {" "}
                     wonkylabrador@gmail.com
                   </Link>
                 </p>
