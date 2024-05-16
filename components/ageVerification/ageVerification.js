@@ -27,7 +27,7 @@ const AgeVerification = ({ children }) => {
         <Head>
           <title>Age Verification - Wonky Labrador</title>
         </Head>
-        <AgeModal onConfirm={handleConfirm} onReject={handleReject} />{" "}
+        <AgeModal onConfirm={handleConfirm} onReject={handleReject} />
       </>
     );
   }

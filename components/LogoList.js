@@ -13,9 +13,9 @@ const LogoList = () => {
 
     <div className="w-full bg-[#ebebeb]">
       <div className=" p-4 container w-full mx-auto relative ">
-        {/* <article class="wrapper " > */}
-        <div class="marquee">
-          <div class="marquee__group">
+        {/* <article className="wrapper " > */}
+        <div className="marquee">
+          <div className="marquee__group">
             <Image
               alt="Abbeydale brewery company logo"
               src={Abbeydale}
@@ -58,7 +58,7 @@ const LogoList = () => {
             />
           </div>
 
-          <div aria-hidden="true" class="marquee__group">
+          <div aria-hidden="true" className="marquee__group">
             <Image
               alt="Abbeydale brewery company logo"
               src={Abbeydale}

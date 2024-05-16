@@ -10,11 +10,6 @@ const AgeModal = ({ onConfirm, onReject }) => {
     setIsOpen(false);
   }
 
-  function openModal() {
-    console.log("open");
-    setIsOpen(true);
-  }
-
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>

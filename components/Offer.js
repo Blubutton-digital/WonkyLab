@@ -11,7 +11,10 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const Offer = () => {
   return (
-    <section className="bg-[#EBEBEB] md:pb-12 lg:scroll-mt-24" id="offers">
+    <section
+      className="bg-[#EBEBEB] md:pb-12 lg:scroll-mt-24 scrol-mt-20"
+      id="offers"
+    >
       <div className="container mx-auto md:pt-28 pt-14 text-center md:mb-24 mb-14">
         <H3 black>What we offer</H3>
         <p className="text-dark  max-w-4xl mx-auto lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">

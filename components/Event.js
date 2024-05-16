@@ -41,17 +41,17 @@ const Event = ({ eventData, month }) => {
               <path
                 d="M12 8.40567V12.4057L15 15.4057M21 12.4057C21 17.3762 16.9706 21.4057 12 21.4057C7.02944 21.4057 3 17.3762 3 12.4057C3 7.43511 7.02944 3.40567 12 3.40567C16.9706 3.40567 21 7.43511 21 12.4057Z"
                 stroke="#D6963B"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M12 8.40567V12.4057L15 15.4057M21 12.4057C21 17.3762 16.9706 21.4057 12 21.4057C7.02944 21.4057 3 17.3762 3 12.4057C3 7.43511 7.02944 3.40567 12 3.40567C16.9706 3.40567 21 7.43511 21 12.4057Z"
                 stroke="#292F36"
-                stroke-opacity="0.2"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeOpacity="0.2"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             {startTime}

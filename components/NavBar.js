@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import CustomLink from "./CustomLink";
 
 import WonkyLogo from "@/public/Images/Wonky-Lab-Logo.png";
 // import WonkyLogo from "@/public/Images/Logos/WonkyLogo.png";
@@ -43,12 +44,12 @@ const NavBar = () => {
           >
             Our Story
           </Link>
-          <Link
+          <CustomLink
             className="relative after:w-full hover:underline decoration-wonky decoration-2 underline-offset-4 xlg:text-lg text-sm font-lato tracking-wide"
             href="/#offers"
           >
             What we offer
-          </Link>
+          </CustomLink>
         </nav>
         <Link href={"/"} className="relative hidden lg:block h-auto w-auto">
           <Image
