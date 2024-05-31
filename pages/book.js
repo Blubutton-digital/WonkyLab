@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import NavBar from "@/components/NavBar";
 import H3 from "@/components/H3";
 
-import Table from "../public/Images/booking/table.png";
+import Table from "../public/Images/booking/table.jpg";
 import Stool from "../public/Images/booking/Wonky-10.jpg";
 import Bottles from "../public/Images/booking/bottles.jpg";
 import Test1 from "../public/Images/booking/test1.jpg";
@@ -92,37 +92,34 @@ const Book = () => {
             <H3 black>Book out our venue</H3>
           </span>
           {/* Gallery */}
-          <div className="grid gap-2 lg:gap-6 xl:gap-14 grid-cols-2 md:grid-cols-10 grid-rows-2  w-full mt-28 max-h-[565px] xl:max-h-[700px]">
-            <div className="h-[265px] md:h-[565px] xl:h-[700px] w-full col-span-1 row-span-1 md:col-span-4 md:row-span-2 relative">
+          <div className="grid gap-2 lg:gap-6 xl:gap-14 grid-cols-4 md:grid-cols-10 grid-rows-2  w-full mt-28 max-h-[565px] xl:max-h-[700px]">
+            <div className="h-full w-full col-span-2 md:col-span-4 row-span-2 relative">
               {/* <Image
                 alt="Image of drinks cheersing"
                 src={Cheers}
                 className="object-cover h-full w-full rounded-md"
               /> */}
               <Image
-                src={
-                  "https://utfs.io/f/7935f9b8-2f3c-40d9-a077-edc7f07b71ff-1tn2lb.jpg"
-                }
+                src={Test1}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover rounded-md"
                 priority
                 fill
+                placeholder="blur"
               />
             </div>
-            <div className="md:col-span-3 col-span-2 relative">
+            <div className="md:col-span-3 col-span-2 realtive">
               {/* <Image
                 alt="Image of drinks cheersing"
                 src={Table}
                 className="object-cover  h-full w-full rounded-md"
               /> */}
               <Image
-                src={
-                  "https://utfs.io/f/51a941ba-1b05-4cdc-a481-9231588c320b-1tk5vy.png"
-                }
+                src={Table}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover object-top rounded-md"
                 priority
-                fill
+                placeholder="blur"
               />
             </div>
             <div className="md:col-span-3 col-span-2 relative">
@@ -132,13 +129,11 @@ const Book = () => {
                 className="object-cover  h-full w-full rounded-md"
               /> */}
               <Image
-                src={
-                  "https://utfs.io/f/c9351ffe-2617-4a39-9dfc-efe2307ed573-8bumw.jpg"
-                }
+                src={Stool}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover object-top rounded-md"
                 priority
-                fill
+                placeholder="blur"
               />
             </div>
             <div className="col-span-4 relative">
@@ -148,13 +143,11 @@ const Book = () => {
                 className="object-cover md:block hidden  h-full w-full rounded-md"
               /> */}
               <Image
-                src={
-                  "https://utfs.io/f/b232c4b8-eee4-4f9b-aa8e-d7eb74efb59b-1tn2lc.jpg"
-                }
+                src={Test2}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover md:block hidden  object-top rounded-md"
                 priority
-                fill
+                placeholder="blur"
               />
             </div>
             <div className="col-span-2 relative">
@@ -164,13 +157,11 @@ const Book = () => {
                 className="md:block hidden object-cover  h-full w-full rounded-md"
               /> */}
               <Image
-                src={
-                  "https://utfs.io/f/eeb40a91-956d-4c34-8f6c-50ea8f237279-15f819.jpg"
-                }
+                src={Bottles}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover md:block hidden  object-top rounded-md"
                 priority
-                fill
+                placeholder="blur"
               />
             </div>
           </div>

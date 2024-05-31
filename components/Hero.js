@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import HeroBg2 from "../public/Images/Home/fullViewBar.jpg";
 
 const Hero = () => {
   return (
     <div className="w-screen h-screen bg-black/60 relative">
       <Image
-        src={
-          "https://utfs.io/f/8a978d36-b29d-4a98-95da-137b7432ed3a-bf2e01.jpg"
-        }
+        src={HeroBg2}
+        // src={'https://utfs.io/f/8a978d36-b29d-4a98-95da-137b7432ed3a-bf2e01.jpg'}
         alt="Background image of the bar"
         fill
         className="object-cover -z-10"
         priority
+        placeholder="blur"
       />
 
       <div className="container mx-auto h-full z-50">

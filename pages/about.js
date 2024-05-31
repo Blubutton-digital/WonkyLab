@@ -33,9 +33,10 @@ const _about = () => {
           <section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 md:pb-24 pb-14 gap-x-20">
             <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 order-2 lg:order-1">
               <Image
-                src={
-                  "https://utfs.io/f/fbedb8b8-d06f-42cd-850a-97e23ced674f-hw1vyz.jpg"
-                }
+                // src={
+                //   "https://utfs.io/f/fbedb8b8-d06f-42cd-850a-97e23ced674f-hw1vyz.jpg"
+                // }
+                src={Macca2}
                 alt="Photo of shop front"
                 className="h-full w-full object-cover lg:object-top rounded-md object-center"
                 fill
@@ -108,9 +109,10 @@ const _about = () => {
               </div>
               <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
                 <Image
-                  src={
-                    "https://utfs.io/f/6c9e1951-0ae8-45bc-b286-1b16e75b02ac-5pnxcw.jpg"
-                  }
+                  // src={
+                  //   "https://utfs.io/f/6c9e1951-0ae8-45bc-b286-1b16e75b02ac-5pnxcw.jpg"
+                  // }
+                  src={Shop1}
                   alt="Photo of shop front"
                   className="h-full w-full object-cover object-top rounded-md"
                   fill
