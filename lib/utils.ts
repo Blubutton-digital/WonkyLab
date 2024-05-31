@@ -44,14 +44,25 @@ export function isDateInThePast(dateStr) {
 
   return eventDate < currentDate;
 }
-export function isMonthInThePast(month) {
-  const currentMonth = new Date().getMonth() + 1; // JavaScript months are 0-based
+export function isMonthInThePast(month, events) {
+  const currentDate = new Date();
 
-  // Convert given month to a number
-  const monthNumber = monthNameToNumber[month] || parseInt(month, 10); // Handles string numbers or month name
+  // Reset the currentDate to only include year, month, and date (ignoring time)
+  currentDate.setHours(0, 0, 0, 0);
 
-  // Check if the given month is in the past
-  return monthNumber < currentMonth;
+  return events.every((event) => {
+    const eventDateParts = event.fullDate.split("/"); // Assuming dd/MM/yyyy format
+    const eventDate = new Date(
+      eventDateParts[2],
+      eventDateParts[1] - 1,
+      eventDateParts[0]
+    ); // Create date object
+
+    // Reset the eventDate to only include year, month, and date (ignoring time)
+    eventDate.setHours(0, 0, 0, 0);
+
+    return eventDate < currentDate; // Event is strictly in the past
+  });
 }
 
 export function getDayOfWeek(dateStr) {
@@ -72,3 +83,14 @@ export function getDayOfWeek(dateStr) {
 
   return dayNames[dayIndex];
 }
+
+export const isLastDateInThePast = (event) => {
+  const date = new Date().getDate();
+  const lastDate = event.reduce((accumulator, currentValue) => {
+    const currentValueAsNumber = Number(currentValue.date);
+    return currentValueAsNumber > accumulator
+      ? currentValueAsNumber
+      : accumulator;
+  }, -Infinity);
+  return lastDate > date;
+};

@@ -4,11 +4,8 @@ import NavBar from "@/components/NavBar";
 import React from "react";
 import Image from "next/image";
 
-import Macca from "../public/Images/Macca-shopfront.png";
-import Macca1 from "../public/Images/Home/macca1.jpg";
 import Macca2 from "../public/Images/Home/macca2.jpg";
 import Shop1 from "../public/Images/Home/shopOpen.jpg";
-import Shop from "../public/Images/open-sign.png";
 import Link from "next/link";
 import LogoList from "@/components/LogoList";
 import Banner from "@/components/Banner";
@@ -36,11 +33,12 @@ const _about = () => {
           <section className="container mx-auto flex flex-col lg:flex-row justify-between sm:mt-2 mt-10 px-4 md:pb-24 pb-14 gap-x-20">
             <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0 order-2 lg:order-1">
               <Image
-                src={Macca2}
+                src={
+                  "https://utfs.io/f/fbedb8b8-d06f-42cd-850a-97e23ced674f-hw1vyz.jpg"
+                }
                 alt="Photo of shop front"
                 className="h-full w-full object-cover lg:object-top rounded-md object-center"
                 fill
-                placeholder="blur"
               />
             </div>
             <div className="lg:w-6/12 w-full h-full relative flex flex-col  my-auto order-1 lg:order-2">
@@ -110,10 +108,12 @@ const _about = () => {
               </div>
               <div className="lg:w-6/12 xl:w-4/12 w-full sm:h-[594px] h-[400px] relative mt-14 lg:mt-0">
                 <Image
-                  src={Shop1}
+                  src={
+                    "https://utfs.io/f/6c9e1951-0ae8-45bc-b286-1b16e75b02ac-5pnxcw.jpg"
+                  }
                   alt="Photo of shop front"
                   className="h-full w-full object-cover object-top rounded-md"
-                  placeholder="blur"
+                  fill
                 />
               </div>
             </div>

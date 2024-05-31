@@ -5,7 +5,11 @@ import NavBar from "@/components/NavBar";
 import React from "react";
 
 import { EventList } from "@/data/events";
-import { isDateInThePast, isMonthInThePast } from "@/lib/utils";
+import {
+  isDateInThePast,
+  isLastDateInThePast,
+  isMonthInThePast,
+} from "@/lib/utils";
 import Head from "next/head";
 import AgeVerification from "@/components/ageVerification/ageVerification";
 import Link from "next/link";
@@ -18,7 +22,7 @@ const events = () => {
         <title>Events - Wonky Lab</title>
         <meta
           name="description"
-          content="Here at The Wonkey Labrador, we hold a range of regular and featured events. Check out what is available below, you’re sure to find something you will enjoy!"
+          content="Here at The Wonky Labrador, we hold a range of regular and featured events. Check out what is available below, you’re sure to find something you will enjoy!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -31,7 +35,7 @@ const events = () => {
           <div className="text-center px-4">
             <H3>Upcoming Events</H3>
             <p className="text-white text-xl max-w-4xl mx-auto md:mt-20 mt-14 font-light tracking-wide leading-relaxed md:text-center text-left">
-              Here at The Wonkey Labrador, we hold a range of regular and
+              Here at The Wonky Labrador, we hold a range of regular and
               featured events. Check out what is available below, you’re sure to
               find something you will enjoy!
             </p>
@@ -44,14 +48,17 @@ const events = () => {
                 className="hover:text-wonky decoration-2 underline underline-offset-2  inline-flex items-center gap-2 group"
                 target="_blank"
               >
-                Eventbrite page{" "}
+                Eventbrite page
                 <ArrowTopRightOnSquareIcon className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
               </Link>{" "}
               to book your ticket.
             </p>
           </div>
           {Object.keys(EventList).map((month) => {
-            const checkMonth = isMonthInThePast(month);
+            const checkMonth = isMonthInThePast(month, EventList[month]);
+            // const checkMonth = isDateInThePast(EventList[month])
+
+            console.log("check month", checkMonth);
             if (!checkMonth)
               return (
                 <div className="md:mt-24 mt-14 px-4" key={month}>
@@ -77,11 +84,11 @@ const events = () => {
               <div className="flex flex-col gap-y-3 lg:max-w-md w-full">
                 <div className="inline-flex justify-between">
                   <p>Sundays</p>
-                  <p>19:00</p>
+                  <p>18:00</p>
                 </div>
                 <p className="font-playfair text-2xl">Quiz Night</p>
                 <p>
-                  Every Sunday is quiz Sunday here at The Wonkey Labrador. So
+                  Every Sunday is quiz Sunday here at The Wonky Labrador. So
                   come down for a drink and put your thinking caps on ready to
                   test your trivia knowledge!
                 </p>

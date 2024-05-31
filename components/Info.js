@@ -2,9 +2,6 @@ import React from "react";
 import H3 from "./H3";
 import Image from "next/image";
 
-import Shopfront from "../public/Images/shopFront.png";
-import Shopfront2 from "../public/Images/Home/frontOfBar2.jpg";
-
 const Info = ({ reverse }) => {
   return (
     <div className="container mx-auto flex flex-col lg:flex-row gap-x-20 justify-between sm:mt-2 mt-10 p-4">
@@ -32,11 +29,12 @@ const Info = ({ reverse }) => {
           className="rounded-lg object-cover"
         /> */}
         <Image
-          src={Shopfront2}
+          src={
+            "https://utfs.io/f/c1a6f54e-71db-47cc-b32a-b8d535cc01ae-vvgznl.jpg"
+          }
           alt="Photo of shop front"
           className="h-full w-full object-cover object-top rounded-md"
           fill
-          placeholder="blur"
         />
       </div>
     </div>

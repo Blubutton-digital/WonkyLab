@@ -4,10 +4,11 @@ export const EventList = {
       date: "22",
       subHeading: "Wine Tasting",
       title: "White & Sparkling",
-      description: "Description for the wine tasting event.",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
       startTime: "19:00",
       eventBrite: "url",
-      fullDate: "22/05/2024", // Full date in the expected format
+      fullDate: "22/05/2024",
     },
     {
       date: "23",
@@ -41,6 +42,28 @@ export const EventList = {
       eventBrite: "url",
       fullDate: "13/06/2024",
     },
+    {
+      date: "26",
+      subHeading: "Wine Tasting",
+      title: "Beaux Vins Français",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
+      startTime: "19:00",
+      eventBrite: "url",
+      fullDate: "26/06/2024",
+    },
+  ],
+  July: [
+    {
+      date: "24",
+      subHeading: "Wine Tasting",
+      title: "Nature in wine form",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
+      startTime: "19:00",
+      eventBrite: "url",
+      fullDate: "24/07/2024",
+    },
   ],
   August: [
     {
@@ -52,6 +75,16 @@ export const EventList = {
       startTime: "19:00",
       eventBrite: "url",
       fullDate: "01/08/2024",
+    },
+    {
+      date: "21",
+      subHeading: "Wine Tasting",
+      title: "Wines of the UK",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
+      startTime: "19:00",
+      eventBrite: "url",
+      fullDate: "21/08/2024",
     },
     {
       date: "22",
@@ -75,8 +108,28 @@ export const EventList = {
       eventBrite: "url",
       fullDate: "12/09/2024",
     },
+    {
+      date: "25",
+      subHeading: "Wine Tasting",
+      title: "Bottle Banquet Mk II",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
+      startTime: "19:00",
+      eventBrite: "url",
+      fullDate: "25/09/2024",
+    },
   ],
   October: [
+    {
+      date: "23",
+      subHeading: "Wine Tasting",
+      title: "Grapes of the Capes",
+      description:
+        "We'll have some delicious snacks, meats and cheeses to accompany your wines as ever. Lizzie will serve you tasters of each delicious wine, with a range of sparkling, white, rose and reds.",
+      startTime: "19:00",
+      eventBrite: "url",
+      fullDate: "23/10/2024",
+    },
     {
       date: "24",
       subHeading: "Tap Takeover",
@@ -93,12 +146,11 @@ export const EventList = {
   //     date: "TBC",
   //     subHeading: "Tap Takeover",
   //     title: "To Be Confirmed",
-  //     description:
-  //       "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
+  //     description: "Tap takeover with a tasting of 7 beers, a brewer talking about the brewery & beer as well as food from a local supplier.",
   //     startTime: "",
   //     eventBrite: "",
-  //     fullDate: "TBC",
-  //   },
+  //     fullDate: "TBC"
+  //   }
   // ],
   December: [
     {
