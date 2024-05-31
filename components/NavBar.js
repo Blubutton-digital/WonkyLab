@@ -6,26 +6,18 @@ import WonkyLogo from "@/public/Images/Wonky-Lab-Logo.png";
 // import WonkyLogo from "@/public/Images/Logos/WonkyLogo.png";
 import Link from "next/link";
 
+import { openingTimes } from "@/data/openingTimes";
+
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [closeTime, setCloseTime] = useState("");
-
-  const closingTimes = {
-    1: "closed",
-    2: "15:00 - 22:00",
-    3: "15:00 - 22:00",
-    4: "15:00 - 22:00",
-    5: "15:00 - 23:00",
-    6: "12:00 - 23:00",
-    0: "12:00 - 20:00",
-  };
   const today = new Date();
   const day = today.getDay().toString();
   // const day = 1;
 
   useEffect(() => {
-    setCloseTime(closingTimes[day]);
-  }, [closeTime]);
+    setCloseTime(openingTimes[day].opening);
+  }, [day]);
 
   return (
     <div className="bg-wonky_green lg:h-24 h-20 w-full fixed z-50">
