@@ -25,7 +25,15 @@ const AgeVerification = ({ children }) => {
     return (
       <>
         <Head>
-          <title>Age Verification - Wonky Labrador</title>
+          <title>Wonky Lab</title>
+          <meta
+            name="description"
+            content="Discover The Wonky Labrador, a cozy bar in Sheffield offering a unique craft beer experience. Join us for a relaxing atmosphere, knowledgeable bartenders, and a variety of beers from the best UK breweries. Perfect for beer aficionados and casual drinkers alike."
+          />
+          <meta
+            name="keywords"
+            content="The Wonky Labrador, craft beer Sheffield, cozy bar, unique drinking experience, Sheffield bar, UK breweries, craft beer, local bar, beer tasting, Sheffield nightlife, bar with character, Sheffield pubs, beer lovers, artisan beer"
+          />
         </Head>
         <AgeModal onConfirm={handleConfirm} onReject={handleReject} />
       </>
