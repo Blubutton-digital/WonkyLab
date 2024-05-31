@@ -17,7 +17,8 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const events = () => {
   return (
-    <AgeVerification>
+    // <AgeVerification>
+    <>
       <Head>
         <title>Events - Wonky Lab</title>
         <meta
@@ -32,7 +33,7 @@ const events = () => {
       </header>
       <main className="bg-wonky_green lg:pt-40 pt-14 ">
         <section className="container mx-auto">
-          <div className="text-center px-4">
+          <div className="text-center">
             <H3>Upcoming Events</H3>
             <p className="text-white text-xl max-w-4xl mx-auto md:mt-20 mt-14 font-light tracking-wide leading-relaxed md:text-center text-left">
               Here at The Wonky Labrador, we hold a range of regular and
@@ -61,7 +62,7 @@ const events = () => {
             console.log("check month", checkMonth);
             if (!checkMonth)
               return (
-                <div className="md:mt-24 mt-14 px-4" key={month}>
+                <div className="md:mt-24 mt-14" key={month}>
                   <H3 className="text-white text-4xl capitalize">{month}</H3>
                   {EventList[month].map((eventData, index) => {
                     const checkDate = isDateInThePast(eventData.fullDate);
@@ -110,7 +111,8 @@ const events = () => {
         </section>
       </main>
       <Footer />
-    </AgeVerification>
+    </>
+    // </AgeVerification>
   );
 };
 

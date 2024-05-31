@@ -11,7 +11,8 @@ import AgeVerification from "@/components/ageVerification/ageVerification";
 
 export default function Home() {
   return (
-    <AgeVerification>
+    // <AgeVerification>
+    <>
       <Head>
         <title>Wonky Lab</title>
         <meta
@@ -36,6 +37,7 @@ export default function Home() {
       <footer className="bg-wonky_green">
         <Footer />
       </footer>
-    </AgeVerification>
+    </>
+    // </AgeVerification>
   );
 }

@@ -73,7 +73,8 @@ const Book = () => {
   // }
 
   return (
-    <AgeVerification>
+    // <AgeVerification>
+    <>
       <Head>
         <title>Booking - Wonky Labrador</title>
         <meta
@@ -561,7 +562,8 @@ const Book = () => {
       <footer>
         <Footer />
       </footer>
-    </AgeVerification>
+      {/* </AgeVerification> */}
+    </>
   );
 };
 
