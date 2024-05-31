@@ -46,34 +46,6 @@ const Contact = () => {
                       <p>{item.opening}</p>
                     </div>
                   ))}
-                  {/* <div className="flex flex-row justify-between lg:gap-x-48 gap-x-32">
-                    <p>Monday</p>
-                    <p>Closed</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Tuesday</p>
-                    <p>15:00 - 22:00</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Wednesday</p>
-                    <p>15:00 - 22:00</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Thursday</p>
-                    <p>15:00 - 22:00</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Friday</p>
-                    <p>15:00 - 23:00</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Saturday</p>
-                    <p>12:00 - 23:00</p>
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <p>Sunday</p>
-                    <p>12:00 - 20:00</p>
-                  </div> */}
                 </div>
               </div>
             </div>

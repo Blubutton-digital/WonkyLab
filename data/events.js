@@ -24,8 +24,8 @@ export const EventList = {
   June: [
     {
       date: "3",
-      subHeading: "Mental Health Monday",
-      title: " With Angel Takoree",
+      title: "Mental Health Monday",
+      subHeading: " With Angel Takoree",
       description:
         "Wonky Labrador invites you to unwind with Lego Mindful Play. De-stress, get creative, and enjoy a free soft or non-alcoholic drink on us. Bring your friends or meet new ones in a relaxed, supportive atmosphere. See you there!",
       startTime: "19:00",
