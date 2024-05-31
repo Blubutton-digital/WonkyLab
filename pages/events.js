@@ -41,7 +41,7 @@ const events = () => {
             <H3>Upcoming Events</H3>
             <p className="text-white text-xl max-w-4xl mx-auto md:mt-20 mt-14 font-light tracking-wide leading-relaxed md:text-center text-left">
               Here at The Wonky Labrador, we hold a range of regular and
-              featured events. Check out what is available below, you’re sure to
+              featured events. Check out what&apos;s on below, you’re sure to
               find something you will enjoy!
             </p>
             <p className="text-white text-xl max-w-4xl mx-auto md:mt-10 mt-7 font-light tracking-wide leading-relaxed md:text-center text-left">
