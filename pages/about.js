@@ -51,12 +51,12 @@ const _about = () => {
               <H3 black>Our Story</H3>
               <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 The familiar face of The Wonky Labrador is Mac McGrath, a
-                village boy of South Yorkshire stock. Mac has fallen in love
-                with Sheffield & the Peak District and as a craft beer fanatic
-                with 20 years experience in hospitality, opening a bar here was
-                pretty much inevitable. His experiences of travelling through
-                Europe and his stay in New Zealand has driven the service and
-                style found in The Wonky Labrador
+                Lincolnshire coastal boy. Mac has fallen in love with Sheffield
+                & the Peak District and as a craft beer fanatic with 20 years
+                experience in hospitality, opening a bar here was pretty much
+                inevitable. His experiences of travelling through Europe and his
+                stay in New Zealand has driven the service and style found in
+                The Wonky Labrador
               </p>
               <p className="text-dark lg:text-xl text-lg mt-14 font-lato font-light tracking-wide lg:leading-relaxed leading-loose">
                 We welcome boardgamers, beer aficionados, weekend
