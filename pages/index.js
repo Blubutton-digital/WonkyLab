@@ -11,14 +11,18 @@ import AgeVerification from "@/components/ageVerification/ageVerification";
 
 export default function Home() {
   return (
-    // <AgeVerification>
-    <>
+    <AgeVerification>
       <Head>
         <title>Wonky Lab</title>
         <meta
           name="description"
-          content="Looking for a place to relax and enjoy a cold craft beer? Our bar is the perfect spot for you! We offer a cosy atmosphere and a unique drinking experience that will leave you coming back for more."
+          content="Discover The Wonky Labrador, a cozy bar in Sheffield offering a unique craft beer experience. Join us for a relaxing atmosphere, knowledgeable bartenders, and a variety of beers from the best UK breweries. Perfect for beer aficionados and casual drinkers alike."
         />
+        <meta
+          name="keywords"
+          content="The Wonky Labrador, craft beer Sheffield, cozy bar, unique drinking experience, Sheffield bar, UK breweries, craft beer, local bar, beer tasting, Sheffield nightlife, bar with character, Sheffield pubs, beer lovers, artisan beer"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,7 +41,6 @@ export default function Home() {
       <footer className="bg-wonky_green">
         <Footer />
       </footer>
-    </>
-    // </AgeVerification>
+    </AgeVerification>
   );
 }

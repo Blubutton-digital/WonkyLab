@@ -17,14 +17,18 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const events = () => {
   return (
-    // <AgeVerification>
-    <>
+    <AgeVerification>
       <Head>
         <title>Events - Wonky Lab</title>
         <meta
           name="description"
-          content="Here at The Wonky Labrador, we hold a range of regular and featured events. Check out what is available below, you’re sure to find something you will enjoy!"
+          content="Stay updated with the latest events at The Wonky Labrador. From Mental Health Monday to exclusive beer tastings, there’s always something happening at our cozy Sheffield bar."
         />
+        <meta
+          name="keywords"
+          content="The Wonky Labrador events, Mental Health Monday, beer tastings, Sheffield bar events, community events, live music Sheffield, bar activities, beer festivals, themed nights, special events, local gatherings, bar promotions, event calendar"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -111,8 +115,7 @@ const events = () => {
         </section>
       </main>
       <Footer />
-    </>
-    // </AgeVerification>
+    </AgeVerification>
   );
 };
 

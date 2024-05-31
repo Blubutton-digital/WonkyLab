@@ -73,14 +73,18 @@ const Book = () => {
   // }
 
   return (
-    // <AgeVerification>
-    <>
+    <AgeVerification>
       <Head>
         <title>Booking - Wonky Labrador</title>
         <meta
           name="description"
           content="The Wonky Labrador is available for private hire events including birthday parties, engagement celebrations, work do’s and occasions where you just want to get together with all of your friends. With a private upstairs area, or the venue as a whole, you’re sure to find the right space for your event."
         />
+        <meta
+          name="keywords"
+          content="The Wonky Labrador bookings, venue reservation Sheffield, private parties, corporate events, special occasions, party venue, event space, Sheffield celebrations, bar hire, private functions, event planning, group bookings, private hire"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -562,8 +566,7 @@ const Book = () => {
       <footer>
         <Footer />
       </footer>
-      {/* </AgeVerification> */}
-    </>
+    </AgeVerification>
   );
 };
 
