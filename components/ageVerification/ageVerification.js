@@ -24,7 +24,7 @@ const AgeVerification = ({ children }) => {
   if (!ageVerified) {
     return (
       <>
-        <Head>
+        {/* <Head>
           <title>Wonky Lab</title>
           <meta
             name="description"
@@ -34,7 +34,7 @@ const AgeVerification = ({ children }) => {
             name="keywords"
             content="The Wonky Labrador, craft beer Sheffield, cozy bar, unique drinking experience, Sheffield bar, UK breweries, craft beer, local bar, beer tasting, Sheffield nightlife, bar with character, Sheffield pubs, beer lovers, artisan beer"
           />
-        </Head>
+        </Head> */}
         <AgeModal onConfirm={handleConfirm} onReject={handleReject} />
       </>
     );

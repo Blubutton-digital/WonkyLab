@@ -101,13 +101,14 @@ const events = () => {
 
               <div className="flex flex-col gap-y-3 lg:max-w-md w-full">
                 <div className="inline-flex justify-between">
-                  <p>Coming soon!</p>
+                  <p>Returning from October!</p>
                 </div>
-                <p className="font-playfair text-2xl">Board Game Night</p>
+                <p className="font-playfair text-2xl">Mental Health Mondays</p>
                 <p>
-                  We host regular game nights with your favourite board games.
-                  We have plenty to go around, or feel free to bring a favourite
-                  with you!
+                  On the first Monday of every month, de-stress, get creative,
+                  and enjoy a free soft or non-alcoholic drink on us. Bring your
+                  friends or meet new ones in a relaxed, supportive atmosphere.
+                  See you there!
                 </p>
               </div>
             </div>
